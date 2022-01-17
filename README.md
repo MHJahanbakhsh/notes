@@ -16,4 +16,6 @@ what happens with portals is : based on where  your states are or personal prefr
 ## useRef:
 used to store variables when they really dont need to be stored in state.
 such as input values.(updating input value and run function to setState,just to finally read that value is not necessary.)
-although we have to bend the rule and break out from "REACT" to browser DOM manipulation
+although we have to bend the rule and break out from "REACT" to browser DOM manipulation.
+
+also unlike states Ref would not force component to rerender in every change. so keep that in mind for storing a variable that we dont neccessarily want to Rerenders our component
