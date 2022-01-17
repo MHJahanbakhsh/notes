@@ -11,3 +11,9 @@ Portals only affect the HTML DOM structure and not impact the React components t
 sidebar's z-index gets compared to positioned's z-index.
 
 what happens with portals is : based on where  your states are or personal prefrence you define your modal component.let say very deep; we don't care as long as that modal component returns its jsxs as portal.and if you do that,every time it renders rather than appearing as a direct child of root,it will be rendered in related div.
+
+---
+## useRef:
+used to store variables when they really dont need to be stored in state.
+such as input values.(updating input value and run function to setState,just to finally read that value is not necessary.)
+although we have to bend the rule and break out from "REACT" to browser DOM manipulation
