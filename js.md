@@ -324,3 +324,5 @@ note:even number type inputes return those numbers as string;
 ```javascript
 {error && <errorModal/>}
 ```
+---
+### [complete guide to reducer function in javascript](https://www.javascripttutorial.net/javascript-array-reduce/)
