@@ -33,3 +33,13 @@ covention is to use present tense for commit messages but its bullshit tbh.
 ## Amending commits:
 let say you added and commited some files and suddenly opps .. you realize that u forgot to add 1 file.what you can do is add that forgotten file just like you would have normally and then instead of commit with -m flag you'll write ```git commit --amend``` .this will open the previous commit message's file and you can eddit your message and this file will be added to previous commit(no new commit gets created) 
 __note:__ amending commit only works for previous commit.
+---
+there is a convention that hidden folders(and files?) start with dot?
+---
+# important note: Git tracks directory and all subdirectories(great great grandchild...)
+so dont initialize another git inside an already git subdirectory.its already gettin tracked
+---
+# in fact each commit is a check point! thats all. or diffrent save through a game so to speak
+making commits should be conceptual. for example after adding or deleting an specific feature to your app. you should not commit after every little change in your script
+
+the main benefit of having an staging area separate with commiting is when you made lots of change to your app bu they are for diffrent featurs. for ex: file1 and file2 are created to shape navbar and file3 is eddited to enhance your app logic.you want to first ```add file1 file2``` and commit them with appropriate message and then do the same thing for file3 .so their workflow is separate
