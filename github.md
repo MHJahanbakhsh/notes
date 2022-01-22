@@ -52,3 +52,9 @@ the main benefit of having an staging area separate with commiting is when you m
 ---
 ![Screenshot (73)](https://user-images.githubusercontent.com/50621975/150650850-202f87ed-82b4-48a9-ad6d-38f7482504d8.png)
 Head is the state that your current project is at
+---
+
+#Branching:
+* ```git branch``` gives us list of all branches in our repo
+* ```git branch branch1``` will create a branch1
+* __note:__ the default master branch is not created untill you commit somthing,hence if you try create a branch in a empty repo(right after initialization) it'll give you an error cause the default branch should be master and its not created yet
