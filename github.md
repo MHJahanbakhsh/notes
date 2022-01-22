@@ -43,3 +43,10 @@ so dont initialize another git inside an already git subdirectory.its already ge
 making commits should be conceptual. for example after adding or deleting an specific feature to your app. you should not commit after every little change in your script
 
 the main benefit of having an staging area separate with commiting is when you made lots of change to your app bu they are for diffrent featurs. for ex: file1 and file2 are created to shape navbar and file3 is eddited to enhance your app logic.you want to first ```add file1 file2``` and commit them with appropriate message and then do the same thing for file3 .so their workflow is separate
+---
+![image](https://user-images.githubusercontent.com/50621975/150650539-6141af9b-3cd7-42fe-8318-7cd8276c9dc7.png)
+
+---
+* there is nothing special about master branch.except its default premade for us.it's deffenitly not mandatory to do some special work in it. in fact you can rename or delete it 
+* since 2020 github default branch in named ```main``` but Git remains ```master```
+*
