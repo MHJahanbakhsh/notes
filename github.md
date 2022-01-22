@@ -67,6 +67,7 @@ you can switch to that branch and start commiting new changes on it to seperate 
 
 ---
 ![Screenshot (74)](https://user-images.githubusercontent.com/50621975/150656126-afb4d90a-38f9-4b03-ae0a-416e6ffab1d5.png)
+```checkout``` is not recomended for switching between branches
 
 ![Screenshot (75)](https://user-images.githubusercontent.com/50621975/150656389-8ae2cf4e-367a-48de-8a51-743bceb996b8.png)
 
