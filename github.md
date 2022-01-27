@@ -14,6 +14,7 @@
 *    ``` mkdir folder1 folder2 folder3``` can create multiple folders with one mkdir command
 *    ``` rm purple.txt yellow.xlsx``` delete file(s) perminantly(shift+delete)
 *    ``` rm -rf folder1``` with -rf flag we can delete folders rf stands for recursive force?.(still shift delete)
+*    ```cat <file name>``` reads the file in terminal
 
 ---
 ### Git vs Github:
@@ -75,3 +76,12 @@ similar to this there is also ```git checkout -e``` but we dont do that here
 if you're on a branch and with some uscommited changes in a file, try to switch your branch,you'll get an error saying that either commit your changes or stash
 but the story would be diffrent if your uncommited chsnge is new empty file:without any error it'll follow you in your new branch
 
+## Deleting and Renaming branch:
+* in order to rename a branch you have to be on that branch(HEAD must point to that branch)
+* in order to delete a branch you have to not be in that branch(HEAD must point to some other branch)
+
+```git -d <branch name>``` how to delete a branch
+however if you try to delete a branch without merged it before,you'll get a error.so you either have to merge it first or use "Force Delete"
+force delete is done by using ```D``` instead of ```d``` .
+
+```git branch -m <new name>``` for renaming a branch that you're currently in
