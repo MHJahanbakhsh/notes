@@ -70,4 +70,8 @@ you can switch to that branch and start commiting new changes on it to seperate 
 ```checkout``` is not recomended for switching between branches
 
 ![Screenshot (75)](https://user-images.githubusercontent.com/50621975/150656389-8ae2cf4e-367a-48de-8a51-743bceb996b8.png)
+similar to this there is also ```git checkout -e``` but we dont do that here
+----
+if you're on a branch and with some uscommited changes in a file, try to switch your branch,you'll get an error saying that either commit your changes or stash
+but the story would be diffrent if your uncommited chsnge is new empty file:without any error it'll follow you in your new branch
 
