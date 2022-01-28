@@ -80,7 +80,7 @@ but the story would be diffrent if your uncommited chsnge is new empty file:with
 * in order to rename a branch you have to be on that branch(HEAD must point to that branch)
 * in order to delete a branch you have to not be in that branch(HEAD must point to some other branch)
 
-```git -d <branch name>``` how to delete a branch
+```git branch -d <branch name>``` how to delete a branch
 however if you try to delete a branch without merged it before,you'll get a error.so you either have to merge it first or use "Force Delete"
 force delete is done by using ```D``` instead of ```d``` .
 
