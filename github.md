@@ -3,7 +3,7 @@
 * or "goddamn idiotic truckload of shit" (depends on your mood)
 ---
 ---
-### some bash odes:
+### some bash codes:
 * ``` start .``` in windows this will open file explorer on the directory that you are currently in(in mac is ``` code .```)
 * ``` ls ``` by its own just shows directory files and folders.
 *   ``` ls <folder name> ``` will show the ls of a folder currently exist in ls
@@ -55,8 +55,9 @@ the main benefit of having an staging area separate with commiting is when you m
 Head is the state that your current project is at
 ---
 
-#Branching:
+# Branching:
 * ```git branch``` gives us list of all branches in our repo
+* ```git branch -v``` similar to command above but gives little more info about each branch such as tip of hashcode and commit message
 * ```git branch branch1``` will create a branch1
 __note:__ the default master branch is not created untill you commit somthing,hence if you try create a branch in a empty repo(right after initialization) it'll give you an error cause the default branch should be master and its not created yet
 ---
@@ -85,3 +86,6 @@ however if you try to delete a branch without merged it before,you'll get a erro
 force delete is done by using ```D``` instead of ```d``` .
 
 ```git branch -m <new name>``` for renaming a branch that you're currently in
+---
+## Merging branches:
+
