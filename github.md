@@ -120,7 +120,8 @@ so after recieving message above,a new window opens in your default text edditor
 ![Screenshot (86)](https://user-images.githubusercontent.com/50621975/152023800-54ebd0a5-13d5-4234-82d5-f957ffdd1307.png)
 at this point you have to make your choice upon how you are going to merge them.finally you have to delete all the " ==<<>>>" markers and deliver a legit file.
 for example we can keep both changes(in coding is not always possible.here is just text file) 
-```i have 2 cats
+```
+i have 2 cats
 i have a chicken
 i used to have a dog :(
 ```
@@ -128,5 +129,21 @@ and save this shit.
 after this, a new file(s) gets created and when you type ```git status``` you see valla!! actually merge is done just not staged yet.and depends on the way you treated conflicts you see the messages:both files modified or 1 file modified or ...
 now you have to commit your changes to finish the merge
 
-
-
+### important note about conflicts:
+even if in one branhc the files is empty and in the other branch the respected file is not;they have conflicts! becuase in the same lines one branch is empty and the other is written some shit and this merge wont happen without first resolving it. when two files content appended to each other, was for when in a file a in branch "A" we have:
+```
+hello
+you
+wassap
+```
+and in branch "B":
+```
+hello
+you 
+wassap
+some
+other 
+shits
+...
+```
+as u can see first 3 lines is intact in file2
