@@ -94,14 +94,14 @@ force delete is done by using ```D``` instead of ```d``` .
 * new merge commit(without conflict) 
 * new merge commit(with conflict)
 
-## Fast Forward Merge:
+## 1-Fast Forward Merge:
 this is the easiest merge. let say from the master branch you created a new branch called "bugfix" and made some commit in it.meanwhile master branch remained intact(no one commited any change into it).the situation is like this:
 ![Screenshot (77)](https://user-images.githubusercontent.com/50621975/151988464-d5e8b581-f2ed-413f-9662-87ecb6d85594.png)
 what we gonna do is making master branch to catch up.and we do that by first going to master branch and then ```git merge bugfix``` .and what happens is picture below:
 ![Screenshot (78)](https://user-images.githubusercontent.com/50621975/151996209-e8af5db0-18e3-4437-9ace-d9b99823b91d.png)
 you literally get the message says :"Fast Forward Merge"
 
-## New Merge Commit:
+## 2-New Merge Commit:
 this type of merge happens when master branch is not remaining intact while working on other branches; but still there is no conflict among the files.
 example of a conflict is :line 59 of the "hey.txt" in master branch is diffrent from "hey.txt" in bugfix branch
 ![Screenshot (82)](https://user-images.githubusercontent.com/50621975/152005706-8d14654e-f275-4815-b2cb-4c9e0a0b83e4.png)
@@ -110,6 +110,23 @@ a better example for this kind of merge is when you make a new file in the maste
 __the workflow in this merge is exactly the same(switching to rspected branch and write ```git merge <branch name>```) . the only diffrence is what happens next:
 a window will open to write your commit message
 ![Screenshot (84)](https://user-images.githubusercontent.com/50621975/152015235-394ae20a-8686-4785-8931-e23b5076604b.png)
+
+## 2-Merge With Conflicts:
+so essentially there is no magic involved. we have to manually resolve it
+if we repeat the same process, we'll get the message below:
+![Screenshot (85)](https://user-images.githubusercontent.com/50621975/152016382-8ac1c8a4-4bed-41d8-9450-67e170d2aab4.png)
+so a commonplace scenario for this ,is when two branchs make diffrent changes in one file.
+so after recieving message above,a new window opens in your default text edditor with some file like this:
+![Screenshot (86)](https://user-images.githubusercontent.com/50621975/152023800-54ebd0a5-13d5-4234-82d5-f957ffdd1307.png)
+at this point you have to make your choice upon how you are going to merge them.finally you have to delete all the " ==<<>>>" markers and deliver a legit file.
+for example we can keep both changes(in coding is not always possible.here is just text file) 
+```i have 2 cats
+i have a chicken
+i used to have a dog :(
+```
+and save this shit.
+after this, a new file(s) gets created and when you type ```git status``` you see valla!! actually merge is done just not staged yet.and depends on the way you treated conflicts you see the messages:both files modified or 1 file modified or ...
+now you have to commit your changes to finish the merge
 
 
 
