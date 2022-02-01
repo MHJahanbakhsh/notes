@@ -86,6 +86,19 @@ however if you try to delete a branch without merged it before,you'll get a erro
 force delete is done by using ```D``` instead of ```d``` .
 
 ```git branch -m <new name>``` for renaming a branch that you're currently in
+
 ---
-## Merging branches:
+## Merging branches(oh boy!):
+#### overall we have 3 types of scenarios when it comes to merging:
+* fast forward merges
+* new merge commit(without conflict) 
+* new merge commit(with conflict)
+
+##### Fast Forward Merge:
+this is the easiest merge. let say from the master branch you created a new branch called "bugfix" and made some commit in it.meanwhile master branch remained intact(no one commited any change into it).the situation is like this:
+![Screenshot (77)](https://user-images.githubusercontent.com/50621975/151988464-d5e8b581-f2ed-413f-9662-87ecb6d85594.png)
+what we gonna do is making master branch to catch up.and we do that by first going to master branch and then ```git merge bugfix``` .and what happens is picture below:
+![Screenshot (78)](https://user-images.githubusercontent.com/50621975/151996209-e8af5db0-18e3-4437-9ace-d9b99823b91d.png)
+
+
 
