@@ -88,17 +88,28 @@ force delete is done by using ```D``` instead of ```d``` .
 ```git branch -m <new name>``` for renaming a branch that you're currently in
 
 ---
-## Merging branches(oh boy!):
-#### overall we have 3 types of scenarios when it comes to merging:
+# Merging branches(oh boy!):
+## overall we have 3 types of scenarios when it comes to merging:
 * fast forward merges
 * new merge commit(without conflict) 
 * new merge commit(with conflict)
 
-##### Fast Forward Merge:
+## Fast Forward Merge:
 this is the easiest merge. let say from the master branch you created a new branch called "bugfix" and made some commit in it.meanwhile master branch remained intact(no one commited any change into it).the situation is like this:
 ![Screenshot (77)](https://user-images.githubusercontent.com/50621975/151988464-d5e8b581-f2ed-413f-9662-87ecb6d85594.png)
 what we gonna do is making master branch to catch up.and we do that by first going to master branch and then ```git merge bugfix``` .and what happens is picture below:
 ![Screenshot (78)](https://user-images.githubusercontent.com/50621975/151996209-e8af5db0-18e3-4437-9ace-d9b99823b91d.png)
 you literally get the message says :"Fast Forward Merge"
+
+## New Merge Commit:
+this type of merge happens when master branch is not remaining intact while working on other branches; but still there is no conflict among the files.
+example of a conflict is :line 59 of the "hey.txt" in master branch is diffrent from "hey.txt" in bugfix branch
+![Screenshot (82)](https://user-images.githubusercontent.com/50621975/152005706-8d14654e-f275-4815-b2cb-4c9e0a0b83e4.png)
+in this case if we merge; git creates a new commit for us with 2 parents(beforehand we only have seen commits that we make them by ourselfs and there was only one parent for each commit)
+a better example for this kind of merge is when you make a new file in the master branch and do some commits on it. this file has nothing to do with the one which editted in bugfix branch,hence there is no conflict)
+__the workflow in this merge is exactly the same(switching to rspected branch and write ```git merge <branch name>```) . the only diffrence is what happens next:
+a window will open to write your commit message
+![Screenshot (84)](https://user-images.githubusercontent.com/50621975/152015235-394ae20a-8686-4785-8931-e23b5076604b.png)
+
 
 
