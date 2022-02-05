@@ -154,3 +154,4 @@ as u can see first 3 lines is intact in file2
 * ```git diff --staged or --cached``` will only show changes to files in the "staged" area.If you have all changes staged for commit, then both commands(```git diff HEAD``` and ```git diff --staged```) will output the same
 * __note:__ if you make a new file and dont add it to staging area, ```git diff``` shows nothing!
 * we can add a specific file to the commands above to narrow down our search for example:```git diff script.js``` or ```git diff HEAD main.css```
+* ```git diff branch1..branch2``` show diffrence between 2 branches.(obviuosly commited diffrences)
