@@ -147,3 +147,10 @@ shits
 ...
 ```
 as u can see first 3 lines is intact in file2
+---
+## Git Diff:
+* ```git diff``` shows changes between working direcory(already commited) and current situation(not added to staging area yet).if you add changes to staging area, "git diff" shows nothing
+* ```git diff HEAD``` show changes between working directory(already commited) and not yet commited(either it's staged or not). in other words:__```git diff HEAD``` will show all changes to tracked files.__
+* ```git diff --staged or --cached``` will only show changes to files in the "staged" area.If you have all changes staged for commit, then both commands(```git diff HEAD``` and ```git diff --staged```) will output the same
+* __note:__ if you make a new file and dont add it to staging area, ```git diff``` shows nothing!
+* we can add a specific file to the commands above to narrow down our search for example:```git diff script.js``` or ```git diff HEAD main.css```
