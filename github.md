@@ -155,3 +155,4 @@ as u can see first 3 lines is intact in file2
 * __note:__ if you make a new file and dont add it to staging area, ```git diff``` shows nothing!
 * we can add a specific file to the commands above to narrow down our search for example:```git diff script.js``` or ```git diff HEAD main.css```
 * ```git diff branch1..branch2``` comparing 2 branches(obviuosly only shows diffrences that are commited)
+* ```git diff commit1..commit2``` similarly we can compare two commits;where commit1 & commit2 are shortened hashes you see on ```git log --oneline```
