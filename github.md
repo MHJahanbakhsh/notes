@@ -61,7 +61,8 @@ Head is the state that your current project is at
 * ```git branch branch1``` will create a branch1
 __note:__ the default master branch is not created untill you commit somthing,hence if you try create a branch in a empty repo(right after initialization) it'll give you an error cause the default branch should be master and its not created yet
 ---
-``` git commit -a -m "commit message"``` is the way to jump the staging area and directly commit changes
+``` git commit -a -m "commit message"``` is the way to jump the staging area and directly commit changes. can not done for initial commit
+
 ---
 
 __note:__ when you commit some changes in a branch and then create a new branch, the Head will point to both branches and the new branch on its first node also has that state(visualize it). 
