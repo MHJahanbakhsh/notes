@@ -171,9 +171,20 @@ note:if your changes are confliciting and  you recieve ``` error: Your local cha
 Please commit your changes or stash them before you switch branches.
 Aborting ``` it does not matter if your changes are in staging area or working directory
 
-note: %95 of times we use just these two commands: ```git stash``` and ```git stash pop``` . but its good to know the rest
+__note:__ %95 of times we use just these two commands: ```git stash``` and ```git stash pop``` . but its good to know the rest
 
 ``` git stash apply``` is like``` git stash pop```,except it wont empty the stash and you can re apply changes somewhere else.
+
+__we can have multiple stashes,stacking all over each other.when ```git stash pop``` git applies most recent stash first.__
+we can see the list of multiple stashes by writing: ``` git stash list```
+![Screenshot (87)](https://user-images.githubusercontent.com/50621975/152797452-0f73d4be-b90f-48c9-b681-36b7f0a311dc.png)
+
+how to apply specific stash from a list:
+![Screenshot (88)](https://user-images.githubusercontent.com/50621975/152797564-bcc99268-b809-4ab9-9043-0977cc143214.png)
+
+### removing specific stash or the entire list:
+![Screenshot (90)](https://user-images.githubusercontent.com/50621975/152819406-7f6cce38-2cae-4066-9faa-bc657ed5f9e0.png)
+![Screenshot (91)](https://user-images.githubusercontent.com/50621975/152819431-94fa3b40-a22e-4583-9b75-7767809285a9.png)
 
 
 
