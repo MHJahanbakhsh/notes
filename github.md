@@ -186,5 +186,11 @@ how to apply specific stash from a list:
 ![Screenshot (90)](https://user-images.githubusercontent.com/50621975/152819406-7f6cce38-2cae-4066-9faa-bc657ed5f9e0.png)
 ![Screenshot (91)](https://user-images.githubusercontent.com/50621975/152819431-94fa3b40-a22e-4583-9b75-7767809285a9.png)
 
+---
+
+# time traveling & git checkout:
+so as u already know ``` git checkout``` is capable of all kinds of shit.that's why ``` git switch``` and ``` git restore``` are designed to reduce the load of it.
+
+
 
 
