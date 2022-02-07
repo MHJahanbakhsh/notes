@@ -162,4 +162,14 @@ as u can see first 3 lines is intact in file2
 ---
 
 # Stashing:
+stashing is like saving to temporary memory.for example: you are on branch x and working on somthing but not ready to commit;meanwhile you somthing happens and you have to go to branch y. you can add files to staging area and then type: ``` git stash``` or ``` git stash save``` and you'll see your files are not in staging area anymore,they are in the so called *stash* .now you can switch to desired branch and har gohi khasi bokhori and then come back to this branch and continuing your work by typing ``` git stash pop```;this command remove changes in *stash* and puts them back to staging area in branch x
+
+note:it's not like always you have to choose over between commiting and stashing befor switching: if your changes are not conflicting to the other branche which you are moving,then your changes would come with you;however thats not optimal most of the times.
+
+note:if your changes are confliciting and  you recieve ``` error: Your local changes to the following files would be overwritten by checkout:
+        index.html
+Please commit your changes or stash them before you switch branches.
+Aborting ``` it does not matter if your changes are in staging area or working directory
+
+
 
