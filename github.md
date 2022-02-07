@@ -190,7 +190,12 @@ how to apply specific stash from a list:
 
 # time traveling & git checkout:
 so as u already know ``` git checkout``` is capable of all kinds of shit.that's why ``` git switch``` and ``` git restore``` are designed to reduce the load of it.
-
+we can write ``` git checkout <some commit hash>``` to travel to specific commit.we can can use full hash or atleast first 7 digits of the hash(retrieved from ``` git log --oneline```.
+by doing this we enter in "daetached HEAD" mode .in this mode HEAD is pointing to specific commit instead of the branch(when pointing to a branch , is pointing to the last commit of that branch).3 things can happen after entering deatached mode:
+![Screenshot (92)](https://user-images.githubusercontent.com/50621975/152849637-1b999d09-dc55-4ded-ac43-1e0126374350.png)
+![Screenshot (93)](https://user-images.githubusercontent.com/50621975/152850593-3ae01f9d-8deb-4056-84c7-356466c98e1a.png)
+![Screenshot (94)](https://user-images.githubusercontent.com/50621975/152850618-5d4c4867-036c-44bf-9ad3-2a1b9304ee4e.png)
+![Screenshot (96)](https://user-images.githubusercontent.com/50621975/152850635-52886899-aca8-4198-8595-cae7a0c559a1.png)
 
 
 
