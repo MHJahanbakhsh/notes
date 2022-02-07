@@ -171,5 +171,9 @@ note:if your changes are confliciting and  you recieve ``` error: Your local cha
 Please commit your changes or stash them before you switch branches.
 Aborting ``` it does not matter if your changes are in staging area or working directory
 
+note: %95 of times we use just these two commands: ```git stash``` and ```git stash pop``` . but its good to know the rest
+
+``` git stash apply``` is like``` git stash pop```,except it wont empty the stash and you can re apply changes somewhere else.
+
 
 
