@@ -197,5 +197,18 @@ by doing this we enter in "daetached HEAD" mode .in this mode HEAD is pointing t
 ![Screenshot (94)](https://user-images.githubusercontent.com/50621975/152850618-5d4c4867-036c-44bf-9ad3-2a1b9304ee4e.png)
 ![Screenshot (96)](https://user-images.githubusercontent.com/50621975/152850635-52886899-aca8-4198-8595-cae7a0c559a1.png)
 
+while in deatached HEAD mode you can type ```git switch -``` to go to the last commit of that branch(essentially back to attached HEAD mode). ``` git switch <branch name>``` also works
+
+# undoing changes & git checkout:
+let say you've made some changes and instead of ctrl+z you want to revert changes in giti way!(either added to stagig area or nah):
+``` git checkout HEAD <filename(s)>``` or ``` git checkout -- <filename(s)>``` is the way to do it. the working directory becomes how last commit was
+__note: important thing to know about undoing changes is :when we undo our changes and go to prior state; we actually stay do not time travel and HEAD stays on where it already is. this is important to know cuase next command ``` git restore``` can restore your current state to a specific commit__
+
+``` git restore <filename>``` does exactly what ``` git checkout HEAD <filename(s)>``` and ```git checkout -- <filename(s)>``` do.(but better)
+as we already discussed we can use git restore to restore to specific commit:  ```git restore --source HEAD~n <filename>``` . default source is HEAD,we changed it here to HEAD~1 or HEAD~2 or ...
+
+## unstaging files with git restore:
+![Screenshot (97)](https://user-images.githubusercontent.com/50621975/152859899-600eeea7-f44f-4467-9acd-68771cfb516b.png)
+
 
 
