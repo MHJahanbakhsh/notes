@@ -210,5 +210,17 @@ as we already discussed we can use git restore to restore to specific commit:  `
 ## unstaging files with git restore:
 ![Screenshot (97)](https://user-images.githubusercontent.com/50621975/152859899-600eeea7-f44f-4467-9acd-68771cfb516b.png)
 
+## git reset:
+git reset will delete latest repository or repositories you've made and take you back to the hash you provided for it.
+
+let say you have a repository like this:![Screenshot (98)](https://user-images.githubusercontent.com/50621975/152934073-ec6e96b3-913a-44cc-9799-ba46a62c360c.png)  
+if you type ``` git reset bea1bf6``` or ```git reset HEAD~2``` you'll get:![Screenshot (99)](https://user-images.githubusercontent.com/50621975/152934826-216c7e40-425e-4958-8558-9f5276537437.png). as u see all commits after that hash are gone  
+__BUT__ the thing is ,the last state of repo in "mistaken comes with you as unstaged changes. if you add ``--hard`` flag to those code this wont happen and you shall have a hard reset 
+
+## Git Revert:
+![Screenshot (100)](https://user-images.githubusercontent.com/50621975/152936090-336029ce-86a2-4c46-b257-731629bd93f9.png)
+![image](https://user-images.githubusercontent.com/50621975/152936187-3fd5bce7-f822-4d6d-96b2-eac0967507b4.png)
+![Screenshot (102)](https://user-images.githubusercontent.com/50621975/152936332-ecf71aec-db69-4538-8946-6899590ec232.png)
+
 
 
