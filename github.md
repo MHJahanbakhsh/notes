@@ -222,5 +222,14 @@ __BUT__ the thing is ,the last state of repo in "mistaken comes with you as unst
 ![image](https://user-images.githubusercontent.com/50621975/152936187-3fd5bce7-f822-4d6d-96b2-eac0967507b4.png)
 ![Screenshot (102)](https://user-images.githubusercontent.com/50621975/152936332-ecf71aec-db69-4538-8946-6899590ec232.png)
 
+---
+---
+# Github:
+![Screenshot (103)](https://user-images.githubusercontent.com/50621975/153028875-f1ae124b-9179-482e-b07a-19b18c484036.png)
+url in gitclone does not necceserily have to be from github.it could be gitlab,bitbucket,.. basically any url that provides a github repo
+
+__SSH = secure shell__
+
+
 
 
