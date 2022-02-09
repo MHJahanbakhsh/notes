@@ -239,6 +239,24 @@ ok so basically if we want to push our local code to github,there are two ways:
    * if we are starting fresh , this could be little bit easier  
 
 __wait wth is remote?__
+![Screenshot (105)](https://user-images.githubusercontent.com/50621975/153225039-801dfd1b-2617-417b-8efe-e7b7943ae570.png)
+and __origin__ is a conventional name that we pick for our remote
+remotes are repository related.each repo can have multiple remotes.
+
+before add any remote it's better to check if there is already any:![Screenshot (107)](https://user-images.githubusercontent.com/50621975/153226174-c213fbd5-5b29-4c99-b4b5-075199302151.png)
+![Screenshot (108)](https://user-images.githubusercontent.com/50621975/153226351-b7ac5569-dc4d-4232-84cf-f5402f8ea2bf.png)
+![Screenshot (109)](https://user-images.githubusercontent.com/50621975/153226373-6c7179ac-8243-4f8f-8d54-647ced2feb03.png)
+![Screenshot (110)](https://user-images.githubusercontent.com/50621975/153226425-cb726811-7bb1-4171-8609-72a3d21646b5.png)
+![Screenshot (111)](https://user-images.githubusercontent.com/50621975/153226440-2ff1c204-c0c3-4c7a-b94b-c8acdc507732.png)
+by setting up a remote you just tell git the place of this particular local repo on cloud.
+for connecting your work you have to push them
+![Screenshot (112)](https://user-images.githubusercontent.com/50621975/153227979-7c030ce4-4d03-4940-ba0c-6e849123ec45.png)
+
+not so commonly used commands for renaming and removing remotes:
+``` git remote remove <remote name>```
+``` git remote rename <old name> <new name>```
+
+
 
 ### first way:
 
