@@ -264,7 +264,9 @@ what is ```-u``` flag in push?
 it is used to set "upstream" for a branch .which in next pushes we only have to type ```git push```:  
 ``` git push -u origin branch2``` ===> now while we are inside that branch we only have to type ```git push``` and vahlla ! does the same.
 alternativly we can write ``` git push --set-upstream origin branch2```
-![image](https://user-images.githubusercontent.com/50621975/153236612-f086a089-46a1-4858-9afc-1b74dcfa4901.png)
+![Screenshot (114)](https://user-images.githubusercontent.com/50621975/153236832-e3fd9c36-3f58-436a-81bd-65733698aaf4.png)  
+
+
 
 ---
 ![Screenshot (115)](https://user-images.githubusercontent.com/50621975/153236700-fc0917f9-f793-4368-a909-9c9f6e509408.png)
