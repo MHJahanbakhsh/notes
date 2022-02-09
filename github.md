@@ -59,6 +59,7 @@ Head is the state that your current project is at
 * ```git branch``` gives us list of all branches in our repo
 * ```git branch -v``` similar to command above but gives little more info about each branch such as tip of hashcode and commit message
 * ```git branch branch1``` will create a branch1
+* ``` git branch -M <new name>``` will rename the branch that you're currently in
 __note:__ the default master branch is not created untill you commit somthing,hence if you try create a branch in a empty repo(right after initialization) it'll give you an error cause the default branch should be master and its not created yet
 ---
 ``` git commit -a -m "commit message"``` is the way to jump the staging area and directly commit changes. can not done for initial commit
