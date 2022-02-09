@@ -232,7 +232,16 @@ url in gitclone does not necceserily have to be from github.it could be gitlab,b
 __SSH = secure shell,it is a communication protocal just like http,https,ftp,... and it's encrypted.used mostly in terminal/command line__
 
 ## Remote:
-ok so basically if we want to push our local code to githib,first we have to create a github Repo and then define that repo as a "remote" for git in our machine: ``` git remote```
+ok so basically if we want to push our local code to github,there are two ways:
+* create empty repo in github and define that repo in our local machine as a "remote"
+   * if we have an already created local repo and worked on it, this is optimal solution
+* or create empty repo in github and clone that to our machine.by cloning remoting process is already done behind the scene. 
+   * if we are starting fresh , this could be little bit easier  
+
+__wait wth is remote?__
+
+### first way:
+
 
 
 
