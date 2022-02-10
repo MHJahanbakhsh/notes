@@ -315,5 +315,5 @@ the usual use case is like this: you type ```git status``` and it says "your bra
  __Note: your local repo does not automatically checks github and update remote branches .you have to manually fetch the changes everytime you see them on github website __
 
  ## Pulling:
- pull implement those changes made by others in your repo in your actuall files and branches(not only remote branches)
+ pull implement those changes which made by others; in your repo in your actuall files and branches(not only remote branches)
 
