@@ -298,7 +298,7 @@ as u might have already noticed, after you clone a repo if u type ```git branch`
 ![Screenshot (126)](https://user-images.githubusercontent.com/50621975/153500463-85eeff1f-4cb0-4a9f-8368-a3b6b045b3f0.png)
 ![Screenshot (127)](https://user-images.githubusercontent.com/50621975/153500530-05e306c3-7438-472d-8b0b-babef27b6f09.png)
 ![Screenshot (128)](https://user-images.githubusercontent.com/50621975/153500546-a37c9dce-df22-4e18-bb63-30c07521f122.png)
-
+what literally happens is after u switch git makes a local branch and connect to that already existed remote branch
 
 
 
