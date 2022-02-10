@@ -269,12 +269,20 @@ alternativly we can write ``` git push --set-upstream origin branch2```
 
 
 ---
+# Fetching & Pulling:
 ![Screenshot (115)](https://user-images.githubusercontent.com/50621975/153236700-fc0917f9-f793-4368-a909-9c9f6e509408.png)
+
+when we clone a remote repo or push something to remote, something gets created called "Remote Tracking Branch" it's like "HEAD" for your remote repo.it shows where you were ;last time you communicated with remote
+the syntax is like this : "<remote>/<branch>" for example: origin/master  
+unlike HEAD you can't move it around yourself by switching branches or in deattached HEAD mode;it's auto
+ ![Screenshot (116)](https://user-images.githubusercontent.com/50621975/153491805-bc6d76a9-1fed-4baa-b8ab-a754aa819921.png)
+![Screenshot (117)](https://user-images.githubusercontent.com/50621975/153491862-0d9e8810-1c3c-4e7c-b450-bf54c58d124b.png)
+
+
 ---
 
 
 
-### first way:
 
 
 
