@@ -272,14 +272,33 @@ alternativly we can write ``` git push --set-upstream origin branch2```
 # Fetching & Pulling:
 ![Screenshot (115)](https://user-images.githubusercontent.com/50621975/153236700-fc0917f9-f793-4368-a909-9c9f6e509408.png)
 
-when we clone a remote repo or push something to remote, something gets created called "Remote Tracking Branch" it's like "HEAD" for your remote repo.it shows where you were ;last time you communicated with remote
+when we clone a remote repo or push something to remote, something gets created called "Remote Tracking Branch" it's like "HEAD" for your remote branch.it shows most recently known state,the last time you communicated with remote branch  
+__note:__ unlike "HEAD", "remote tracking branch" is not unique for each repo. for each remote branch, we have one RTB
 the syntax is like this : "<remote>/<branch>" for example: origin/master  
-unlike HEAD you can't move it around yourself by switching branches or in deattached HEAD mode;it's auto
+unlike HEAD you can't move it around yourself by switching branches or in deattached HEAD mode;it moves only when you communicate with remote
  ![Screenshot (116)](https://user-images.githubusercontent.com/50621975/153491805-bc6d76a9-1fed-4baa-b8ab-a754aa819921.png)
 ![Screenshot (117)](https://user-images.githubusercontent.com/50621975/153491862-0d9e8810-1c3c-4e7c-b450-bf54c58d124b.png)
+ 
+ we can see list of RTBs by :``` git branch -r```
+ 
+ ![Screenshot (118)](https://user-images.githubusercontent.com/50621975/153496248-7cd065ef-38fa-4382-be79-e7c3f7bd0f67.png)
+![Screenshot (119)](https://user-images.githubusercontent.com/50621975/153496273-ee6f1921-4963-4ab8-bc82-4c4b78b059e7.png)
+![Screenshot (120)](https://user-images.githubusercontent.com/50621975/153496301-b7f012ac-3443-4127-9899-23fff504a84f.png)
 
+  we can checkout RTBs:
+![Screenshot (121)](https://user-images.githubusercontent.com/50621975/153496328-e1b47f90-6b8d-4d2b-bf1c-4117241b5555.png)
+![Screenshot (122)](https://user-images.githubusercontent.com/50621975/153496333-464fa5e2-4e80-4e21-8bf6-f8b828a574ed.png)
 
----
+### wierd behavior after cloning:
+as u might have already noticed, after you clone a repo if u type ```git branch``` ,you only see master or main!but if u type ``` git branch -r``` you'll see all remote branches .looks like other branches did not come with master or they are hidden.well typically after cloning by defualt my master branch is set to track origin/master .but this is not the case for other remote branches. which means you have to manually connect your local branch to those remote branches  
+ and this can be easily done by ``` git switch <branch name>```
+ ![Screenshot (123)](https://user-images.githubusercontent.com/50621975/153500416-2a991b8c-6ded-4d80-abb1-7540036089d9.png)
+ ![Screenshot (124)](https://user-images.githubusercontent.com/50621975/153500436-bd5719ac-0f13-43a7-a8b0-da6d58bda32d.png)
+![Screenshot (125)](https://user-images.githubusercontent.com/50621975/153500450-1d7d0e87-8317-4578-82cb-674d0d9521e9.png)
+![Screenshot (126)](https://user-images.githubusercontent.com/50621975/153500463-85eeff1f-4cb0-4a9f-8368-a3b6b045b3f0.png)
+![Screenshot (127)](https://user-images.githubusercontent.com/50621975/153500530-05e306c3-7438-472d-8b0b-babef27b6f09.png)
+![Screenshot (128)](https://user-images.githubusercontent.com/50621975/153500546-a37c9dce-df22-4e18-bb63-30c07521f122.png)
+
 
 
 
