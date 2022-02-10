@@ -300,10 +300,20 @@ as u might have already noticed, after you clone a repo if u type ```git branch`
 ![Screenshot (128)](https://user-images.githubusercontent.com/50621975/153500546-a37c9dce-df22-4e18-bb63-30c07521f122.png)
 what literally happens is after u switch git makes a local branch and connect to that already existed remote branch
 
+## fetching:
+ if we have multiple contributers and someone push some commits to let say branch master; by fetching those changes we update the RTB! not the actual local branches!
+ i know the pic generally says local directory but actually the RTB in your local machine is the one who gets updated
+![Screenshot (129)](https://user-images.githubusercontent.com/50621975/153505352-5e9293ed-eb0d-4b81-8f61-c84642ee75b6.png)
+![Screenshot (131)](https://user-images.githubusercontent.com/50621975/153505384-b525d0ee-4b4d-48ac-9af8-4b66129175a0.png)
+![Screenshot (132)](https://user-images.githubusercontent.com/50621975/153505396-01c52f11-a9db-4694-9dd3-ce1ae6d21508.png)
+![Screenshot (133)](https://user-images.githubusercontent.com/50621975/153505406-7d519beb-0ef0-45c9-a142-c8b6ddc0c645.png)
+![Screenshot (134)](https://user-images.githubusercontent.com/50621975/153505425-1ec398ea-8d09-4869-abfd-8c178c412b6f.png)
+![Screenshot (135)](https://user-images.githubusercontent.com/50621975/153505434-22720a93-d1c5-4e93-9b0f-8c7752f02116.png)
 
+the usual use case is like this: you type ```git status``` and it says "your branch_x is up to date with origin/branch_x"  __BUT__ that is just what git knows of github repo. the truth is branch_x has got updated multiple times by other collaborators in github. so what fetching does is letting git know "bitch you are far behind !"  and next time you type ``` git status ```, it says "you are n commits behind origin/branch_x"
+ 
+ __Note: your local repo does not automatically checks github and update remote branches .you have to manually fetch the changes everytime you see them on github website __
 
-
-
-
-
+ ## Pulling:
+ pull implement those changes made by others in your repo
 
