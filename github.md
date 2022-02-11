@@ -310,10 +310,22 @@ what literally happens is after u switch git makes a local branch and connect to
 ![Screenshot (134)](https://user-images.githubusercontent.com/50621975/153505425-1ec398ea-8d09-4869-abfd-8c178c412b6f.png)
 ![Screenshot (135)](https://user-images.githubusercontent.com/50621975/153505434-22720a93-d1c5-4e93-9b0f-8c7752f02116.png)
 
-the usual use case is like this: you type ```git status``` and it says "your branch_x is up to date with origin/branch_x"  __BUT__ that is just what git knows of github repo. the truth is branch_x has got updated multiple times by other collaborators in github. so what fetching does is letting git know "bitch you are far behind !"  and next time you type ``` git status ```, it says "you are n commits behind origin/branch_x"
+the usual use case is like this: you type ```git status``` and it says "your branch_x is up to date with origin/branch_x"  __BUT__ that is just what git knows of github repo. the truth is branch_x has got updated multiple times by other collaborators in github(or even yourself from website). so what fetching does is letting git know "bitch you are far behind !"  and next time you type ``` git status ```, it says "you are n commits behind origin/branch_x"
  
  __Note: your local repo does not automatically checks github and update remote branches .you have to manually fetch the changes everytime you see them on github website __
 
  ## Pulling:
  pull implement those changes which made by others; in your repo in your actuall files and branches(not only remote branches)
+![Screenshot (136)](https://user-images.githubusercontent.com/50621975/153554032-0ec9627d-a34f-4cd0-bf7f-eec9d6cfdd5d.png)
+![Screenshot (137)](https://user-images.githubusercontent.com/50621975/153554055-de6fa358-3fbc-4b08-9628-9d59d549497d.png)
+![Screenshot (138)](https://user-images.githubusercontent.com/50621975/153554067-3f611ef3-ce35-478a-87c0-faecc2cd5231.png)
+ if you are on branch_x and run ``` git pull origin master``` while in there; it merges master remote branch to that branch_x. so its very important what branch you are currently on
+![Screenshot (139)](https://user-images.githubusercontent.com/50621975/153554083-bf27d305-6cda-4f61-b4cc-557a27903e9a.png)
+![Screenshot (140)](https://user-images.githubusercontent.com/50621975/153554095-92d1aa21-82ce-4c1e-8e36-51122113b504.png)
+![Screenshot (141)](https://user-images.githubusercontent.com/50621975/153554113-7b0fa972-0a86-4149-b8f9-457a27978dd3.png)
+![Screenshot (142)](https://user-images.githubusercontent.com/50621975/153554122-528694ad-35c2-411c-bb18-483817c7bd1a.png)
+![Screenshot (143)](https://user-images.githubusercontent.com/50621975/153554132-445306c1-8326-4946-8d56-a60f7401757d.png)
+![Screenshot (144)](https://user-images.githubusercontent.com/50621975/153554140-b019a8ca-df9b-4d67-aa98-114cdd86e224.png)
+
+
 
