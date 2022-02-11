@@ -332,5 +332,33 @@ the usual use case is like this: you type ```git status``` and it says "your bra
  # Github Pages:
  ![image](https://user-images.githubusercontent.com/50621975/153580059-5826bf30-5f0b-4e91-8c6b-957ec2eedde2.png)
 
+---
+ 
+ # Github Collaboration Workflows:
+ aaand the worst github workflow award goes to __Centralized Workflow__.   
+ the main problems of this are:
+ * no one can work on anything without disturbing the main codebase
+ * everytime someone wants to push some code,he or she probably have to pull the new commits first
+ 
+ lets take a look at lots of slides to see how this works:
+![Screenshot (148)](https://user-images.githubusercontent.com/50621975/153595790-3f9264ef-bab9-4340-ad7e-12bd07d93445.png)
+![Screenshot (149)](https://user-images.githubusercontent.com/50621975/153595799-a255ca22-b3d9-463f-b1a7-f79fe54c3b97.png)
+![Screenshot (151)](https://user-images.githubusercontent.com/50621975/153595835-088602f6-7cb3-4a5c-806f-074afb8f8bde.png)
+![Screenshot (152)](https://user-images.githubusercontent.com/50621975/153595851-0cc2667f-17e4-48f6-a34f-79de79ba1e90.png)
+![Screenshot (153)](https://user-images.githubusercontent.com/50621975/153595864-ec309d77-cc49-4074-afcb-d22a2fe3cb89.png)
+![Screenshot (154)](https://user-images.githubusercontent.com/50621975/153595874-082bc5c6-8424-41a4-bc4f-507f0394b20d.png)
+![Screenshot (155)](https://user-images.githubusercontent.com/50621975/153595880-5ccc2255-623c-4baa-b327-402a7bdc6e7f.png)
+![Screenshot (156)](https://user-images.githubusercontent.com/50621975/153595893-500baaea-fcf5-4e6c-a298-03c0c153d8d8.png)
+![Screenshot (157)](https://user-images.githubusercontent.com/50621975/153595907-d05c803e-86c9-4cf2-9bb1-089d082fd719.png)
+![Screenshot (158)](https://user-images.githubusercontent.com/50621975/153595916-aad541b1-8f97-40de-aadd-e08b06a22249.png)
+![Screenshot (159)](https://user-images.githubusercontent.com/50621975/153595933-cc1bc343-4ddf-43d1-9297-5113e1b364c3.png)
+![Screenshot (160)](https://user-images.githubusercontent.com/50621975/153595945-cb66f567-818e-44fd-bf4c-7dff3395ab2b.png)
+ ![Screenshot (161)](https://user-images.githubusercontent.com/50621975/153596143-f09d094e-c608-4b55-88f2-f765a26cce36.png)
 
 
+ ## How to solve this?  .. feature branches workflow!
+ all development should be done in diffrent branches
+ 
+ 
+
+ 
