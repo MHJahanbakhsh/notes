@@ -326,3 +326,32 @@ note:even number type inputes return those numbers as string;
 ```
 ---
 ### [complete guide to reducer function in javascript](https://www.javascripttutorial.net/javascript-array-reduce/)
+---
+
+```
+{expression1} && {expression2}
+```
+javascript will return expression2 if only and only expression1 is truthy expression.this is called short circuiting
+---
+in javascript/typescript we dont have shits around numbers(float,integer,..) we only have "number" type for all that
+---
+by default type script will throw an error if you don't specify type for your function parameters.unless you write this in tsconfig.json:
+```
+{ 
+    "compilerOptions": { 
+        "noImplicitAny": false 
+    } 
+}
+```
+
+in typescript/javascript ,Object types are function,arrays,objects and classes which means each one has their own type(like with interface that we define our own types)  
+![image](https://user-images.githubusercontent.com/50621975/153896461-8b71a57d-4fde-4f97-b471-ecad53b42b43.png)
+
+![image](https://user-images.githubusercontent.com/50621975/153896402-7ea9aa7a-815f-4b52-a24b-071d751b3479.png)
+
+
+---
+
+
+
+
