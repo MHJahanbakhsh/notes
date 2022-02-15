@@ -54,7 +54,31 @@ Note:all hooks only are accessible inside a react component(function)
 useRef: essentioanlly  ref has two usecase:
 first:using as a state reservior which does not force component to render like useStateand 
 second:selecting an element instead of using document.queryselector....
- comprehensive guide to useRef: https://www.youtube.com/watch?v=t2ypzz6gJm0;
+ comprehensive guide to useRef: [link](https://www.youtube.com/watch?v=t2ypzz6gJm0);
+ 
+ ### use useRef to acess previous value in states:
+ ```jsx
+import React , {useEffect, useRef, useState} from 'react'
+
+export default function App() {
+const [name,setName] = useState('')
+const prevName = useRef('')
+
+
+useEffect(()=>{
+  prevName.current = name //why name in here is set to prev value and not the current one? becuase at the time useEffect renders,
+}, [name])                //  name is not the new name in state!
+
+  return (
+    <div className="App">
+      <input value={name} onChange={e=>setName(e.target.value)}/>
+      <h2>my name is {name} and it used to be {prevName.current}</h2>
+    </div>
+  );
+}
+
+ ```
+ 
 ---
 Note:don't forget `React.creatElemet()` for interviews
 
