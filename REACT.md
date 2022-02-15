@@ -56,11 +56,8 @@ first:using as a state reservior which does not force component to render like u
 second:selecting an element instead of using document.queryselector....
  comprehensive guide to useRef: https://www.youtube.com/watch?v=t2ypzz6gJm0;
 ---
-Note:don't forget 
-```
-React.creatElemet()
-```
-for interviews
+Note:don't forget `React.creatElemet()` for interviews
+
 ---
 React knows how to work with "array of jsx".thats why we can use map and list rendering;
 ---
