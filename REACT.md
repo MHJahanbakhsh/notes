@@ -33,7 +33,7 @@ whenever you combine components you're using composition
 when to use props.children? custom made components unlike
 
 why  in react we can't use this:
-```
+```jsx
 let title = 'somthing';
 function onClickHandler(){
     title = 'somthing else'    
