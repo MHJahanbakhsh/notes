@@ -21,7 +21,55 @@ although we have to bend the rule and break out from "REACT" to browser DOM mani
 also unlike states Ref would not force component to rerender in every change. so keep that in mind for storing a variable that we dont neccessarily want to Rerenders our component
 
 ---
+## useMemo:
+it comes from memoization which is essentialy caching variables.
+```jsx
+import React from "react"
+import { Fragment, useState , useMemo} from "react"
+import { useEffect } from "react"
 
+
+export default function App(){
+  const [number , setNumber] = useState(0)
+  const [dark , setDark] = useState(false)
+  const doubleNumber = useMemo(()=>{return slowFunction(number)},[number])
+/*
+  const themeStyle = {
+    backgroundColor : dark? 'black':'white',
+    color : dark? 'white': 'black'
+  }
+  */
+  const themeStyle = useMemo(()=>{
+    return  {
+      backgroundColor : dark? 'black':'white',
+      color : dark? 'white': 'black'
+    }
+  },[dark])
+  
+  useEffect(()=>{
+    console.log('runing useEffect cuase theme Styles changed');
+  },[themeStyle ])
+  
+  return (<Fragment>
+    <input type="number" value={number} onChange={(e)=>setNumber(parseInt(e.target.value))} />
+    <button onClick={()=>setDark(prevValue=>!prevValue)}>change theme</button>
+    <div style={themeStyle}>{doubleNumber}</div>
+  </Fragment>)
+
+  function slowFunction(num){
+    console.log('running slow function')
+    for(let i=0 ; i<=1000000000;i++){}
+    
+      return num*2
+    
+  }
+}
+
+
+```
+in the example above, `slowFunction` we used 2 momoization:
+* as u know updating state cause whole component to reRender,so even when we just click on theme changer button, `doubleNumber` gets reinitialized and slowFunction runs completely unneccarily.so we wrap the value in a useMemo.just like useEffect it has a callback function and a dependancy array.the function only runs when the dependancy array changes.
+* we also used useMemo for an object: what happens is below that we have a useEffect that runs everytime "themeStyle" changes; but when since themeStyle is an object and a  refrence type value,in rerenders,its value in callstack changes and cuase useEffect to think it actually changed.so we wrap whole object in a useMemo and since the only variable that object is depends on, is `dark`, we make an arrangement so that only when `dark` varaible change; themStyle change; and hence useEffect runs
 
 Once React knows which virtual DOM objects have changed, then React updates those objects, and only those objects, on the real DOM
 
