@@ -145,7 +145,47 @@ this will work even if childrens are not a single element and can stay alongside
 this is what we call wrapper trick ; an alternative to fragment
 ---
 
-
-![image](https://user-images.githubusercontent.com/50621975/153897548-5f40594b-95a9-4e7a-8b56-707a9076ea3c.png)
-
 useEffect cleanup function: useEffect can return one thing and one thing only;which is a function. this function would invoke at next render(not first one)
+
+![Screenshot (168)](https://user-images.githubusercontent.com/50621975/155688587-bb3e0c54-c0a6-4d64-8d8f-bbb3cefcf730.png)
+
+__an example of creating infinite loop if we dont use `useEffect`:__
+```jsx
+import React, { useState } from 'react';
+
+import Login from './components/Login/Login';
+import Home from './components/Home/Home';
+import MainHeader from './components/MainHeader/MainHeader';
+
+function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+   
+  if(localStorage.getItem('isSignedIn')==1){
+    setIsLoggedIn(true)
+  } //the problem is it creates infinite loop.that's why we need use Effect.changing state causes reRender and in every rerender states changes again and so on
+
+  const loginHandler = (email, password) => {
+    // We should of course check email and password
+    // But it's just a dummy/ demo anyways
+    localStorage.setItem('isSignedIn','1')
+    setIsLoggedIn(true);
+  };
+
+  const logoutHandler = () => {
+    setIsLoggedIn(false);
+  };
+
+  return (
+    <React.Fragment>
+      <MainHeader isAuthenticated={isLoggedIn} onLogout={logoutHandler} />
+      <main>
+        {!isLoggedIn && <Login onLogin={loginHandler} />}
+        {isLoggedIn && <Home onLogout={logoutHandler} />}
+      </main>
+    </React.Fragment>
+  );
+}
+
+export default App;
+
+```
