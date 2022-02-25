@@ -148,6 +148,7 @@ this is what we call wrapper trick ; an alternative to fragment
 useEffect cleanup function: useEffect can return one thing and one thing only;which is a function. this function would invoke at next render(not first one)
 
 ![Screenshot (168)](https://user-images.githubusercontent.com/50621975/155688587-bb3e0c54-c0a6-4d64-8d8f-bbb3cefcf730.png)
+ofcourse the data fetching process results usually shows on screen ;but the process itself is sideEffecrt 
 
 __an example of creating infinite loop if we dont use `useEffect`:__
 ```jsx
@@ -162,7 +163,8 @@ function App() {
    
   if(localStorage.getItem('isSignedIn')==1){
     setIsLoggedIn(true)
-  } //the problem is it creates infinite loop.that's why we need use Effect.changing state causes reRender and in every rerender states changes again and so on
+  } //the problem is it creates infinite loop.that's why we need use Effect(to control this process).
+  //changing state causes reRender and in every rerender states changes again and so on
 
   const loginHandler = (email, password) => {
     // We should of course check email and password
@@ -189,3 +191,94 @@ function App() {
 export default App;
 
 ```
+
+__another example where useEffect shines:__
+in this case the problem is reusing same logic multiple times:
+```jsx
+import React, { useState } from 'react';
+
+import Card from '../UI/Card/Card';
+import classes from './Login.module.css';
+import Button from '../UI/Button/Button';
+
+const Login = (props) => {
+  const [enteredEmail, setEnteredEmail] = useState('');
+  const [emailIsValid, setEmailIsValid] = useState();
+  const [enteredPassword, setEnteredPassword] = useState('');
+  const [passwordIsValid, setPasswordIsValid] = useState();
+  const [formIsValid, setFormIsValid] = useState(false);
+
+  const emailChangeHandler = (event) => {
+    setEnteredEmail(event.target.value);
+
+    setFormIsValid(
+      event.target.value.includes('@') && enteredPassword.trim().length > 6
+    );
+  };
+
+  const passwordChangeHandler = (event) => {
+    setEnteredPassword(event.target.value);
+
+    setFormIsValid(
+      event.target.value.trim().length > 6 && enteredEmail.includes('@')
+    );
+  };
+
+  const validateEmailHandler = () => {
+    setEmailIsValid(enteredEmail.includes('@'));
+  };
+
+  const validatePasswordHandler = () => {
+    setPasswordIsValid(enteredPassword.trim().length > 6);
+  };
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+    props.onLogin(enteredEmail, enteredPassword);
+  };
+
+  return (
+    <Card className={classes.login}>
+      <form onSubmit={submitHandler}>
+        <div
+          className={`${classes.control} ${
+            emailIsValid === false ? classes.invalid : ''
+          }`}
+        >
+          <label htmlFor="email">E-Mail</label>
+          <input
+            type="email"
+            id="email"
+            value={enteredEmail}
+            onChange={emailChangeHandler}
+            onBlur={validateEmailHandler}
+          />
+        </div>
+        <div
+          className={`${classes.control} ${
+            passwordIsValid === false ? classes.invalid : ''
+          }`}
+        >
+          <label htmlFor="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            value={enteredPassword}
+            onChange={passwordChangeHandler}
+            onBlur={validatePasswordHandler}
+          />
+        </div>
+        <div className={classes.actions}>
+          <Button type="submit" className={classes.btn} disabled={!formIsValid}>
+            Login
+          </Button>
+        </div>
+      </form>
+    </Card>
+  );
+};
+
+export default Login;
+
+```
+instead of using setFormValid function multiple times,we can set this function as a useEffect callback and set dependencies,which make callback function run when we want
