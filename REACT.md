@@ -73,7 +73,7 @@ in the example above, `slowFunction` we used 2 momoization:
 
 Once React knows which virtual DOM objects have changed, then React updates those objects, and only those objects, on the real DOM
 
-vanillajs approach id imperative but react with use of jsx is declarative:
+vanillajs approach is imperative but react with use of jsx is declarative:
 document.createElement('div').append(document.getElementById('root') vs jsx approach
 ---
 whenever you combine components you're using composition
@@ -145,7 +145,8 @@ this will work even if childrens are not a single element and can stay alongside
 this is what we call wrapper trick ; an alternative to fragment
 ---
 
-useEffect cleanup function: useEffect can return one thing and one thing only;which is a function. this function would invoke at next render(not first one)
+### useEffect cleanup function: 
+useEffect can return one thing and one thing only;which is a function. this function would invoke at next render(not initial render)
 
 ![Screenshot (168)](https://user-images.githubusercontent.com/50621975/155688587-bb3e0c54-c0a6-4d64-8d8f-bbb3cefcf730.png)
 ofcourse the data fetching process results usually shows on screen ;but the process itself is sideEffecrt 
