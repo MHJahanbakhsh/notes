@@ -283,3 +283,7 @@ export default Login;
 
 ```
 instead of using setFormValid function multiple times,we can set this function as a useEffect callback and set dependencies,which make callback function run when we want
+
+---
+### useReducer
+one usecase of useReducer is : when updating one state is based on the on other state.in this case you might face a situation that u get the wrong snapshot of the state you want to use.
