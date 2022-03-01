@@ -332,9 +332,18 @@ note:even number type inputes return those numbers as string;
 {expression1} && {expression2}
 ```
 javascript will return expression2 if only and only expression1 is truthy expression.this is called short circuiting
+
 ---
-in javascript/typescript we dont have shits around numbers(float,integer,..) we only have "number" type for all that
+in javascript/typescript we dont have shits around numbers(float,integer,..) we only have "number" type for all that/
+
 ---
+## First-Class Functions vs Higher-Order Functions:
+first class functions is just a concept that either a programming language has it or not.it is not a real thing! it implies on this fact that functions are value and we can treat them as such for example we can call methods on function like we can call methods on array,object ... (ex: `bind`).
+however higher-order function is a function that accept another function as a value or return another function or even both.
+the important note is in js higher-order functions are possible becuase it supports first-class function
+
+---
+
 by default type script will throw an error if you don't specify type for your function parameters.unless you write this in tsconfig.json:
 ```
 { 
