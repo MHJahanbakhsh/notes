@@ -361,6 +361,9 @@ essentially means hiding details of a code implementaion that we don't really ne
  and this allows us to think at higher order or abstract level
 
 ---
+`this` keyword really depends on where it is called.specially in functions
+
+---
 by default type script will throw an error if you don't specify type for your function parameters.unless you write this in tsconfig.json:
 ```
 { 
