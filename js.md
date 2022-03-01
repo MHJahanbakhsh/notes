@@ -339,11 +339,24 @@ in javascript/typescript we dont have shits around numbers(float,integer,..) we 
 ---
 ## First-Class Functions vs Higher-Order Functions:
 first class functions is just a concept that either a programming language has it or not.it is not a real thing! it implies on this fact that functions are value and we can treat them as such for example we can call methods on function like we can call methods on array,object ... (ex: `bind`).
-however higher-order function is a function that accept another function as a value or return another function or even both.
-the important note is in js higher-order functions are possible becuase it supports first-class function
+however higher-order function is a function that accept another function as a value or return another function or even both. 
+```javascript
+document.body.addEventListner('click' , onClickHandler)
+```
+`addEventlistner` is a higher order function cuase it recieves a function(as a callback.harja callback didi bedoon functione parentesh higher ordere). 
+all array methods who recieve a callback are higher order functions(map, foreach , filter , reduce ...)
+the important note is; in javascript higher-order functions are possible becuase js supports first-class function
 
 ---
+intresting destructuring:
+```javascript
+const str = 'hello lads how you doing?'
+//lets get the first word:
+const [first , ...others] = str.split(' ') //totaly legit
+```
 
+
+---
 by default type script will throw an error if you don't specify type for your function parameters.unless you write this in tsconfig.json:
 ```
 { 
