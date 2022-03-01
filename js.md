@@ -354,7 +354,11 @@ const str = 'hello lads how you doing?'
 //lets get the first word:
 const [first , ...others] = str.split(' ') //totaly legit
 ```
-
+__why callback functions are so important? __
+__becuase they allow us to create abstractions__
+### abstraction in programming:
+essentially means hiding details of a code implementaion that we don't really need it. for example we dont need to know how Handler function works in a addEventListner function
+ and this allows us to think at higher order or abstract level
 
 ---
 by default type script will throw an error if you don't specify type for your function parameters.unless you write this in tsconfig.json:
