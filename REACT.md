@@ -303,3 +303,7 @@ one usecase of useReducer is : when updating one state is based on the on other 
 we can still use oldway context in a functional comp(returning a function from consumer tag).it's not like we have to use `useContext`    
 the only time that we can use default value is when we have no provider! (by default value i mean `React.createContext({name:value1,age:value2})`).so technichlly we don't have to use provider to access context in react.however 95% of times the value that we access in our consumer, is the one that we passed to the provider.      
 __note:__ we always have to use consumer. 
+overall there is 3 ways to use context(React.createContext() is already created):
+* `theClass.contextType = contextObject` . only works in calss component.and also write this outside of the class scope.in this case the context values.are accessible via `this.context`
+* `<contextObject.consumer> {(value)=>return...} </contextObject.consumer>
+* useContext 
