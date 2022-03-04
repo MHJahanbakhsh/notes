@@ -361,9 +361,18 @@ essentially means hiding details of a code implementaion that we don't really ne
  and this allows us to think at higher order or abstract level
 
 ---
-`this` keyword really depends on where it is called.specially in functions
+`this` keyword really depends on where it is called.specially in functions    
+### `call` , `apply` and `bind` function methods and partial design pattern:
 
----
+
+
+
+
+
+
+
+
+# typescript
 by default type script will throw an error if you don't specify type for your function parameters.unless you write this in tsconfig.json:
 ```
 { 
