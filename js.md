@@ -364,7 +364,8 @@ essentially means hiding details of a code implementaion that we don't really ne
 `this` keyword really depends on where it is called.specially in functions    
 ### `call` , `apply` and `bind` function methods and partial design pattern:
 
-
+call and apply mutate the original function but bind creates a new function
+call takes arguments one by one.apply take them as an list
 
 
 
