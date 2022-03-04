@@ -78,7 +78,8 @@ useCallBack: Returns and stores the actual function itself in a variable.althoug
 Once React knows which virtual DOM objects have changed, then React updates those objects, and only those objects, on the real DOM
 
 vanillajs approach is imperative but react with use of jsx is declarative:
-document.createElement('div').append(document.getElementById('root') vs jsx approach
+document.createElement('div').append(document.getElementById('root') vs jsx approach     
+
 ---
 whenever you combine components you're using composition
 
@@ -99,9 +100,11 @@ function MyComponent(){
 }
 ```
 because as you already know jsx are not real dom and they will run once at the start of the mounting component..so when we change the 'title' variable to somthig else ,the change would not be reflected in component becuase is not rerendering with new shit .to put into context:react doesnt care about changing variables inside component if they are not part of state system(either useState or this.setState)
+
 ---
 Note:all hooks only are accessible inside a react component(function)
 -useState(value)  is a funtion that RETURNS two things: that 'value' and a function to reset that value
+
 ---
 useRef: essentioanlly  ref has two usecase:
 first:using as a state reservior which does not force component to render like useStateand 
@@ -109,6 +112,7 @@ second:selecting an element instead of using document.queryselector....
  comprehensive guide to useRef: [link](https://www.youtube.com/watch?v=t2ypzz6gJm0);
  
  ### use useRef to acess previous value in states:
+ 
  ```jsx
 import React , {useEffect, useRef, useState} from 'react'
 
@@ -135,9 +139,11 @@ useEffect(()=>{
 Note:don't forget `React.creatElemet()` for interviews
 
 ---
-React knows how to work with "array of jsx".thats why we can use map and list rendering;
+React knows how to work with "array of jsx".thats why we can use map and list rendering;    
+
 ---
 "div soup" is a term used for having to many unnecessary  divs just for wrapping your jsxes;
+
 ---
 Intersting note: 
 ```
@@ -147,6 +153,7 @@ function WrapperComponenet(props){
 ```
 this will work even if childrens are not a single element and can stay alongside in this case;
 this is what we call wrapper trick ; an alternative to fragment
+
 ---
 
 ### useEffect cleanup function: 
@@ -291,3 +298,6 @@ instead of using setFormValid function multiple times,we can set this function a
 ---
 ### useReducer
 one usecase of useReducer is : when updating one state is based on the on other state.in this case you might face a situation that u get the wrong snapshot of the state you want to use.
+
+### Context :
+we can still use oldway context in a functional comp(returning a function from consumer tag).it's not like we have to use `useContext` 
