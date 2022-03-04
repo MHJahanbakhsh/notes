@@ -300,4 +300,6 @@ instead of using setFormValid function multiple times,we can set this function a
 one usecase of useReducer is : when updating one state is based on the on other state.in this case you might face a situation that u get the wrong snapshot of the state you want to use.
 
 ### Context :
-we can still use oldway context in a functional comp(returning a function from consumer tag).it's not like we have to use `useContext` 
+we can still use oldway context in a functional comp(returning a function from consumer tag).it's not like we have to use `useContext`    
+the only time that we can use default value is when we have no provider! (by default value i mean `React.createContext({name:value1,age:value2})`).so technichlly we don't have to use provider to access context in react.however 95% of times the value that we access in our consumer, is the one that we passed to the provider.      
+__note:__ we always have to use consumer. 
