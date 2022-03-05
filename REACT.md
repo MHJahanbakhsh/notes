@@ -306,4 +306,12 @@ __note:__ we always have to use consumer.
 overall there is 3 ways to use context(React.createContext() is already created):
 * `theClass.contextType = contextObject` . only works in calss component.and also write this outside of the class scope.in this case the context values.are accessible via `this.context`
 * `<contextObject.consumer> {(value)=>return...} </contextObject.consumer>
-* useContext 
+* useContext
+
+---
+briliant way to write all of your props:
+```jsx
+function Input(props){
+return <input {...props}/>
+}
+```
