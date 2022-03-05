@@ -315,3 +315,7 @@ function Input(props){
 return <input {...props}/>
 }
 ```
+
+---
+### Forwarding Ref:
+we can not pass ref as a prop with "ref" keyword
