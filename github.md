@@ -57,7 +57,7 @@ the main benefit of having an staging area separate with commiting is when you m
 ![image](https://user-images.githubusercontent.com/50621975/150650539-6141af9b-3cd7-42fe-8318-7cd8276c9dc7.png)
 
 ---
-* there is nothing special about master branch.except its default premade for us.it's deffenitly not mandatory to do some special work in it. in fact you can rename or delete it 
+* there is nothing special about master branch.except its default premade for us.it's definitely not mandatory to do some special work in it. in fact you can rename or delete it 
 * since 2020 github default branch in named ```main``` but Git remains ```master```
 ---
 ![Screenshot (73)](https://user-images.githubusercontent.com/50621975/150650850-202f87ed-82b4-48a9-ad6d-38f7482504d8.png)
