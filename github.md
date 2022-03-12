@@ -24,7 +24,7 @@
 * ```git config --list``` shows list of all configurations
 * ```git config user.name``` shows  configured username
 * ```git config --global user.name "Mohammad"``` config your username (and email accordingly,except that email dont goes in "")
-* ```git add file1 file2``` or ```git add .```` to stage your changes
+* ```git add file1 file2``` or `git add .` to stage your changes
 
 covention is to use present tense for commit messages but its bullshit tbh.
 
