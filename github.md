@@ -42,15 +42,18 @@ git commit --amend
 __note:__ amending commit only works for previous commit.
 
 ---
-there is a convention that hidden folders(and files?) start with dot?
+there is a convention that hidden folders(and files?) start with dot?    
+
 ---
 # important note: Git tracks directory and all subdirectories(great great grandchild...)
 so dont initialize another git inside an already git subdirectory.its already gettin tracked
+
 ---
 # in fact each commit is a check point! thats all. or diffrent save through a game so to speak
 making commits should be conceptual. for example after adding or deleting an specific feature to your app. you should not commit after every little change in your script
 
 the main benefit of having an staging area separate with commiting is when you made lots of change to your app bu they are for diffrent featurs. for ex: file1 and file2 are created to shape navbar and file3 is eddited to enhance your app logic.you want to first ```add file1 file2``` and commit them with appropriate message and then do the same thing for file3 .so their workflow is separate
+
 ---
 ![image](https://user-images.githubusercontent.com/50621975/150650539-6141af9b-3cd7-42fe-8318-7cd8276c9dc7.png)
 
@@ -60,6 +63,7 @@ the main benefit of having an staging area separate with commiting is when you m
 ---
 ![Screenshot (73)](https://user-images.githubusercontent.com/50621975/150650850-202f87ed-82b4-48a9-ad6d-38f7482504d8.png)
 Head is the state that your current project is at
+
 ---
 
 # Branching:
@@ -82,6 +86,7 @@ you can switch to that branch and start commiting new changes on it to seperate 
 
 ![Screenshot (75)](https://user-images.githubusercontent.com/50621975/150656389-8ae2cf4e-367a-48de-8a51-743bceb996b8.png)
 similar to this there is also ```git checkout -e``` but we dont do that here
+
 ----
 if you're on a branch and with some uscommited changes in a file, try to switch your branch,you'll get an error saying that either commit your changes or stash
 but the story would be diffrent if your uncommited chsnge is new empty file:without any error it'll follow you in your new branch
