@@ -238,7 +238,7 @@ __BUT__ the thing is ,the last state of repo in "mistaken comes with you as unst
 ---
 # Github:
 ![Screenshot (103)](https://user-images.githubusercontent.com/50621975/153028875-f1ae124b-9179-482e-b07a-19b18c484036.png)
-url in gitclone does not necceserily have to be from github.it could be gitlab,bitbucket,.. basically any url that provides a github repo
+url in gitclone does not necceserily have to be from github.it could be gitlab,bitbucket,.. basically any url that provides a git repo
 
 __SSH = secure shell,it is a communication protocal just like http,https,ftp,... and it's encrypted.used mostly in terminal/command line__
 
