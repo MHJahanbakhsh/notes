@@ -45,8 +45,7 @@ __note:__ amending commit only works for previous commit.
 there is a convention that hidden folders(and files?) start with dot?    
 
 ---
-#### important note: Git tracks directory and all subdirectories(great great grandchild...)
-so dont initialize another git inside an already git subdirectory.its already gettin tracked
+#### important note: Git tracks directory and all subdirectories(great great grandchild...) ;so dont initialize another git inside an already git subdirectory.its already gettin tracked
 
 ---
 # in fact each commit is a check point! thats all. or diffrent save through a game so to speak
