@@ -33,7 +33,14 @@ covention is to use present tense for commit messages.
 ---
 ## Amending commits:
 let say you added and commited some files and suddenly opps .. you realize that u forgot to add 1 file.what you can do is add that forgotten file just like you would have normally and then instead of commit with -m flag you'll write ```git commit --amend``` .this will open the previous commit message's file and you can eddit your message and this file will be added to previous commit(no new commit gets created) 
+```bash
+git commit -m 'some commit'
+git add forgotten_file
+git commit --amend 
+```
+
 __note:__ amending commit only works for previous commit.
+
 ---
 there is a convention that hidden folders(and files?) start with dot?
 ---
