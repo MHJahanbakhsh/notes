@@ -26,7 +26,7 @@
 * ```git config --global user.name "Mohammad"``` config your username (and email accordingly,except that email dont goes in "")
 * ```git add file1 file2``` or `git add .` to stage your changes
 
-covention is to use present tense for commit messages but its bullshit tbh.
+covention is to use present tense for commit messages.
 
 -if you want to write very long commit message,then just write ```git commit``` (without -m flag) and then it will open a new window in default editor in git to eddit your commit message file
 * ```git log``` shows history of commits. --oneline flag will summarize commit message
