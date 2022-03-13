@@ -368,7 +368,25 @@ the usual use case is like this: you type ```git status``` and it says "your bra
 
 
  ## How to solve this?  .. feature branches workflow!
- all development should be done in diffrent branches
+ all development should be done in diffrent branches. basically no one works on their experimental feature on master branch.only final results goes there.  
+everyone can push their work without needing to first pulling remote repo,becuase they have their own seperate branch to work on 
+![Screenshot (175)](https://user-images.githubusercontent.com/50621975/158075888-4bc95495-b829-4354-b6e5-a7e97d6dced2.png)
+![Screenshot (176)](https://user-images.githubusercontent.com/50621975/158075890-41a20aa4-045f-4151-8045-95021d1bc605.jpg)
+![Screenshot (179)](https://user-images.githubusercontent.com/50621975/158075894-eb57cc26-fa16-411b-9527-356c475ea4f1.png)
+![Screenshot (180)](https://user-images.githubusercontent.com/50621975/158075898-efa52458-3405-460c-9246-24f960bf6db6.png)
+![Screenshot (181)](https://user-images.githubusercontent.com/50621975/158075901-89fa5af1-3c93-4991-b039-b172925ab23c.png)
+![Screenshot (182)](https://user-images.githubusercontent.com/50621975/158075904-3b37ba01-7adc-4c85-b812-a3cf4a477ee0.png)
+![Screenshot (183)](https://user-images.githubusercontent.com/50621975/158075909-bf8f3670-c41f-46da-80ef-f44a45e3230a.png)
+![Screenshot (184)](https://user-images.githubusercontent.com/50621975/158075913-aaf65222-53c0-44f8-ba63-73430ad3bbc8.png)
+![Screenshot (185)](https://user-images.githubusercontent.com/50621975/158075918-024cb00b-2a44-4cdb-beb2-02c5a33091ef.png)
+![Screenshot (186)](https://user-images.githubusercontent.com/50621975/158075919-22e9b34b-5ef0-4a8c-a15a-096ebb845b9a.png)
+![Screenshot (187)](https://user-images.githubusercontent.com/50621975/158075922-eda13456-68e7-43f8-94b3-169ae2c08fd9.png)
+![Screenshot (188)](https://user-images.githubusercontent.com/50621975/158075927-e2ed7504-2a28-48ef-86ae-6de7f29bc127.png)
+![Screenshot (189)](https://user-images.githubusercontent.com/50621975/158075931-899f5784-d90a-41d1-9daa-8b874e036a08.png)
+![Screenshot (190)](https://user-images.githubusercontent.com/50621975/158075934-e38014b0-089f-48a6-b579-169d13e8e4d9.png)
+![Screenshot (191)](https://user-images.githubusercontent.com/50621975/158075939-cfe2fd9c-84e1-4de7-8a19-3434b75ec6b8.png)
+![Screenshot (192)](https://user-images.githubusercontent.com/50621975/158075940-741f7469-8577-4eeb-a00b-a75cedeaa2af.png)
+
  
  
 
