@@ -68,7 +68,7 @@ another important note to remember is that when we assign some variable to somth
 so for both refrence and premitive types when we create new values with '=' based on another value ,js just use one piece of memory for both of them(makes sense) but the main diffrence is for premitives when we say age = 31, js allocate new part of stack with new address and value.
 however in the case of refrence types,it doesn't bother hmself and when we change friend.age, javascript won't make new room for friend and simply mutate the original object!
 
-even when we two diffrent values,with their own initialization for premitive types js will use same memory stack address:
+even when we have two diffrent values,with their own initialization for premitive types js will use same memory stack address:
 ```javascript
   const samAge = 32;
   const markAge = 32;
