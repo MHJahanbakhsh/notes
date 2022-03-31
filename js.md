@@ -387,8 +387,11 @@ in typescript/javascript ,Object types are function,arrays,objects and classes w
 ![image](https://user-images.githubusercontent.com/50621975/153896461-8b71a57d-4fde-4f97-b471-ecad53b42b43.png)
 
 ![image](https://user-images.githubusercontent.com/50621975/153896402-7ea9aa7a-815f-4b52-a24b-071d751b3479.png)
+
 ---
-for object use `for in` and for arrays use `for of`
+for object use `for in` and for arrays use `for of`   
+
+callback que is not part of v8 engine.it is kind of an addon
 
 
 
