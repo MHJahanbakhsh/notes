@@ -319,3 +319,6 @@ return <input {...props}/>
 ---
 ### Forwarding Ref:
 we can not pass ref as a prop with "ref" keyword
+
+### server side rendering:
+the diffrence is it loads an skeleton preload html from serer and then start the react script. it is exactly a sweet spot between ssg and client side rendering
