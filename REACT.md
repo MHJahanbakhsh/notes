@@ -326,3 +326,4 @@ the diffrence is it loads an skeleton preload html from serer and then start the
 ## things that i missed in interview:
 give an example of how HOC works in react     
 how to implement componentwillunmount in functional componenet
+why usecallback and how functions are in need for usecallback
