@@ -434,3 +434,30 @@ in functions the position of arguments matters ;not the name of them
 
 if you console.log an asynchronous funtion,it logs:`AsyncFunction` .so it is really diffrent from a regular function.(as stephan said)
 
+## another callback example:
+using callback gives us more control when we call the function.in this case we can define how to use response and error.we can log them or...
+```javascript
+const forcast = (address,callback)=>{
+    axios.get('http://api.weatherstack.com/current',{
+    params:{
+        access_key:'75eabb2336e0c10a53ba7a347abbbdbc',
+        query:address,
+        units:'f'
+    }
+}).then(response => {
+    if(response.data.error){ //handling high level errors. for example server responded 200 status but there is no data for that city
+        callback(`------ ${response.data.error.info}--------`)
+    }else{
+        callback(undefined,`it is currently ${response.data.current.temperature} out. it feels like ${response.data.current.feelslike} out`)
+    }
+    
+}).catch(error => {  // this is usually for low-level errors such as network problems
+    callback('some low level shit happend');
+});
+}
+
+forcast('austin',(err,res)=>{
+    console.log('ERROR: ', err);
+    console.log('RESPONSE: ', res)
+})
+```
