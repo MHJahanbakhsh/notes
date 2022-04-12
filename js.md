@@ -396,6 +396,41 @@ callback que is not part of v8 engine.it is kind of an addon
       
 dont you think that everytime we use callback it is about some asynchronus shit.for example `setTimeout` is a function that is provided by browsers and node and it uses the callback function in an asynchronus way(calling it later) BUT functions such as `foreach` and `map` also use callback function and they implement them in a synchronus way.
 
-__timer API is unique and like a miracle.__     
+__timer API is unique and like a miracle.__  we can simulate another anync actions like fetching data from server,with this api      
 in functions the position of arguments matters ;not the name of them
+
+
+### Callback example:
+```javascript
+  const geocode = (address)=>{
+    
+    setTimeout(()=>{
+     const data = {
+     longtitide:1,  //imagine this is a requested coordinate data based non address you provided  
+     latitude:0
+     }
+     return data
+      },2000)
+      
+   }
+   
+   console.log(geocode('philadelphia'))  // ->this returns nothing becuase the return is for inner function in setTimeout;not the geocode function
+   
+   
+   //we have to use callback pattern for this to work:
+   const geocode(address,callback)=>{
+   setTimeout(()=>{
+    const data={
+    latitude:1,
+    longtitude:0}
+    callback(data)
+   },2000)
+   }
+   
+   
+   console.log('philadelphia',(data)=>console.log(data)) //->this returns the data
+   
+```
+
+if you console.log an asynchronous funtion,it logs:`AsyncFunction` .so it is really diffrent from a regular function.(as stephan said)
 
