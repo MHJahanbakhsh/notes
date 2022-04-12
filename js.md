@@ -396,6 +396,6 @@ callback que is not part of v8 engine.it is kind of an addon
       
 dont you think that everytime we use callback it is about some asynchronus shit.for example `setTimeout` is a function that is provided by browsers and node and it uses the callback function in an asynchronus way(calling it later) BUT functions such as `foreach` and `map` also use callback function and they implement them in a synchronus way.
 
-__timer API is unique and like a miracle.__
-
+__timer API is unique and like a miracle.__     
+in functions the position of arguments matters ;not the name of them
 
