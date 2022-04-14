@@ -324,6 +324,8 @@ we can not pass ref as a prop with "ref" keyword
 the diffrence is it loads an skeleton preload html from serer and then start the react script. it is exactly a sweet spot between ssg and client side rendering
 
 ## things that i missed in interview:
-give an example of how HOC works in react     
-how to implement componentwillunmount in functional componenet
-why usecallback and how functions are in need for usecallback
+* give an example of how HOC works in react     
+* how to implement componentwillunmount in functional componenet
+* why usecallback and how functions are in need for usecallback
+* There are three categories of lifecycle methods: mounting, updating, and unmounting
+
