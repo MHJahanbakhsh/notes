@@ -473,5 +473,7 @@ function todo(address,{name,time,color}){
 // so we make the parameter to have a default value,just in case:
 function todo(address,{name,time,color}={}){
 }
-``
+```
 
+### what the hell is Symbol?
+__it is a new premitive type in javascript.behind the scenes it represents a unique id like `9823487236487232892739`__
