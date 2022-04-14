@@ -461,3 +461,17 @@ forcast('austin',(err,res)=>{
     console.log('RESPONSE: ', res)
 })
 ```
+
+### importance of default params:
+```javascript
+//let say we expect input of a function to be object and we use destructring :
+
+function todo(address,{name,time,color}){
+}
+
+//but this code leads to an error if,second parameter is missing and the error is like: "connot read name attribute of undefined"
+// so we make the parameter to have a default value,just in case:
+function todo(address,{name,time,color}={}){
+}
+``
+
