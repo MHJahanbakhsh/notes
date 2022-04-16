@@ -15,6 +15,7 @@
 *    ``` rm purple.txt yellow.xlsx``` delete file(s) perminantly(shift+delete)
 *    ``` rm -rf folder1``` with -rf flag we can delete folders rf stands for recursive force?.(still shift delete)
 *    ```cat <file name>``` reads the file in terminal
+*    tilda (`~`) represents users directory. for example to see ssh keys already exists or not: `ls -a -l ~.ssh`
 
 ---
 ### Git vs Github:
