@@ -269,7 +269,7 @@ not so commonly used commands for renaming and removing remotes:
 ``` git remote rename <old name> <new name>```
 
 ## push:
-* we can push each branch at a time with ``` git push <remote name> <local repo name>``` (remote name is usually origin) ex:``` git push origin master```  
+* we can push each branch at a time with ``` git push <remote repo name> <local repo name>``` (remote name is usually origin) ex:``` git push origin master```  
 * or we can push whole repo at once: ```git push --all```
 
 what is ```-u``` flag in push?
