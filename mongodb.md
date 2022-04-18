@@ -4,4 +4,4 @@
 * `db.dropDatabase()` to delete the database that you are currently in
 * `db` shows which database you are currently in
 * `db.createCollection(<name of collection> , options)` to create a new collection
-* `db.collection.drop()` to delete a collection
+* `db.<collection name>.drop()` to delete a collection
