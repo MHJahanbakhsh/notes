@@ -15,3 +15,7 @@ each docmuent in mongodb has a unique __id__ that is automatically generated.(` 
 as we already know JSON is supported by most languages and is easy to parse and render.but it has some limitations    
 BSON(binary encoded json) is an extended version of JSON that supprorts some additional mongodb datatypes that JSON doesn't such as : date , timestamp , objectId.    
 BSON is exclusively in mongodb    
+
+
+### add documents to collection:
+`db.<collecion name>.insertOne(<js object or JSON>)` and `db.<collection name>.insertMany(<list of js objects or JSON>)`
