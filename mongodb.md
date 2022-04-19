@@ -6,5 +6,10 @@
 * `db.createCollection(<name of collection> , options)` to create a new collection
 * `db.<collection name>.drop()` to delete a collection
 ----
+each docmuent in mongodb has a unique __id__ that is automatically generated.( _id )    
 
-each docmuent in mongosb has a unique __id__ that is automatically generated.( _id )
+---
+### what is BSON and how it differs from JSON?
+as we already know JSON is supported by most languages and is easy to parse and render.but it has some limitations    
+BSON is an extended version of JSON that supprorts some additional datatypes that JSON does not such as : date , timestamp , objectId.    
+BSON is exclusively in mongodb    
