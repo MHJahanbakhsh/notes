@@ -28,3 +28,5 @@ db.subsribers.updateOne({name:'ali'},
 {$set:{registered:false}}
 )
 ```
+
+`updateOne` will update the first instance and `updateMany` would update all instances that matches the condition
