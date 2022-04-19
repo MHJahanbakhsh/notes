@@ -6,7 +6,7 @@
 * `db.createCollection(<name of collection> , options)` to create a new collection
 * `db.<collection name>.drop()` to delete a collection
 ----
-each docmuent in mongodb has a unique __id__ that is automatically generated.( _id )    
+each docmuent in mongodb has a unique __id__ that is automatically generated.( _id ). it has 24 charchter    
 
 ---
 ### what is BSON and how it differs from JSON?
