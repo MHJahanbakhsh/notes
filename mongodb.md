@@ -18,4 +18,13 @@ BSON is exclusively in mongodb
 
 
 ### add documents to collection:
-`db.<collecion name>.insertOne(<js object or JSON>)` and `db.<collection name>.insertMany(<list of js objects or JSON>)`
+`db.<collecion name>.insertOne(<js object or JSON>)` and `db.<collection name>.insertMany(<list of js objects or JSON>)`    
+
+### update documents of the collection:
+`db.<collection name>.updateOne({<condition>},{$set:{<how we want to update>}})`
+for example:
+```
+db.subsribers.updateOne({name:'ali'},
+{$set:{registered:false}}
+)
+```
