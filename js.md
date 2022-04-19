@@ -461,7 +461,7 @@ forcast('austin',(err,res)=>{
     console.log('RESPONSE: ', res)
 })
 ```
-
+callbacks are usually designed to run after the completion of other tasks in that function
 ### importance of default params:
 ```javascript
 //let say we expect input of a function to be object and we use destructring :
