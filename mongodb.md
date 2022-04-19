@@ -30,3 +30,7 @@ db.subsribers.updateOne({name:'ali'},
 ```
 
 `updateOne` will update the first instance and `updateMany` would update all instances that matches the condition
+
+---
+![Screenshot (207)](https://user-images.githubusercontent.com/50621975/164068155-779f9462-9645-44af-86b3-f86d1159e6ad.png)
+
