@@ -11,5 +11,5 @@ each docmuent in mongodb has a unique __id__ that is automatically generated.( _
 ---
 ### what is BSON and how it differs from JSON?
 as we already know JSON is supported by most languages and is easy to parse and render.but it has some limitations    
-BSON is an extended version of JSON that supprorts some additional datatypes that JSON does not such as : date , timestamp , objectId.    
+BSON(binary encoded json) is an extended version of JSON that supprorts some additional mongodb datatypes that JSON doesn't such as : date , timestamp , objectId.    
 BSON is exclusively in mongodb    
