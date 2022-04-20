@@ -477,3 +477,6 @@ function todo(address,{name,time,color}={}){
 
 ### what the hell is Symbol?
 __it is a new premitive type in javascript.behind the scenes it represents a unique id like `9823487236487232892739`__
+
+
+in javascript Functions are objects. They have properties and methods. But this type of objects can be called.
