@@ -328,4 +328,6 @@ the diffrence is it loads an skeleton preload html from serer and then start the
 * how to implement componentwillunmount in functional componenet
 * why usecallback and how functions are in need for usecallback
 * There are three categories of lifecycle methods: mounting, updating, and unmounting
+---
 
+jsx will handle array by concatenating the inside and showing on screen.but it gives an error if you pass an object as text
