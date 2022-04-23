@@ -325,7 +325,7 @@ the diffrence is it loads an skeleton preload html from serer and then start the
 
 ## things that i missed in interview:
 * give an example of how HOC works in react     
-* how to implement componentwillunmount in functional componenet
+* how to implement componentwillunmount in functional componenet: with cleanup function in useEffect.(a function that gets returned from useEffect)
 * why usecallback and how functions are in need for usecallback
 * There are three categories of lifecycle methods: mounting, updating, and unmounting
 ---
