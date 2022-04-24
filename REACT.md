@@ -338,3 +338,7 @@ you can pass strings to props in jsx without having to write {} for example:
 
 //both are valid
 ```
+
+when you dont use `useState` and try to use simple `let` to store your app states as you already know react would not rerender the app based on that variable change BUT still that variable changes if you console.log it.the thing is UI would not be update
+
+صاثد 
