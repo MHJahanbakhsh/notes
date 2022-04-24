@@ -342,4 +342,5 @@ you can pass strings to props in jsx without having to write {} for example:
 when you dont use `useState` and try to use simple `let` to store your app states as you already know react would not rerender the app based on that variable change BUT still that variable changes if you console.log it.the thing is UI would not be update
 
 
-the sole purpose of passing function to useState is: for example in a counter app `setCount(count+1)` does not happens instantly as we think it is and it has a very brief pause! so in high frequency changes it things might go wrong.but if we specifically tell react to increment the count value based on the previuos state,it will always be right and even wait for prevState ta taklifesh maloom she
+the sole purpose of passing function to useState is: for example in a counter app `setCount(count+1)` does not happens instantly as we think it is and it has a very brief pause! so in high frequency changes it things might go wrong.but if we specifically tell react to increment the count value based on the previuos state,it will always be right and even wait for prevState ta taklifesh maloom she      
+we can track any kind of state from string and numbers to objects and arrays and we dont need to be worried about refrence and premitive type or shallow and deep comparison.React takes care of all that
