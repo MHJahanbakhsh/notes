@@ -346,3 +346,10 @@ the sole purpose of passing function to useState is: for example in a counter ap
 we can track any kind of state from string and numbers to objects and arrays and we dont need to be worried about refrence and premitive type or shallow and deep comparison.React takes care of all that   
 
 when a component rerenders,all of it's children gets rerender too
+
+## Pure Components:
+Pure Components in React are the components which do not re-renders when the value of state and props has been updated with the same values.   
+`React.memo` is the functional component equivalent of React.PureComponent. It is a higher-order component. If React.memo wraps a component, it memoizes the rendered output and skips subsequent renders if state, props, or context have not changed  
+2very good links for pure component and how it diffres from React.mem:
+[Pure Component](https://medium.com/technofunnel/working-with-react-pure-components-166ded26ae48)
+[Pure Component vs React.memo](https://dev.to/nibble/react-memo-and-react-purecomponent-3k7k)
