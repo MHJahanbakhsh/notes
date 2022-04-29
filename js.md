@@ -479,4 +479,5 @@ function todo(address,{name,time,color}={}){
 __it is a new premitive type in javascript.behind the scenes it represents a unique id like `9823487236487232892739`__
 
 
-in javascript Functions are objects. They have properties and methods. But this type of objects can be called.
+in javascript Functions are objects. They have properties and methods. But this type of objects can be called.    
+we can not return anything from terneary expression.means: `x===4?return 0` is wrong!
