@@ -299,7 +299,9 @@ instead of using setFormValid function multiple times,we can set this function a
 ### useReducer
 one usecase of useReducer is : when updating one state is based on the on other state.in this case you might face a situation that u get the wrong snapshot of the state you want to use.   
 more meaningful name for reducer function could have been "functionThatManagesChangesToStateObject" !   
-and for action : "howToChangeStateObject"   
+and for action : "howToChangeStateObject"
+![Screenshot (215)](https://user-images.githubusercontent.com/50621975/166095330-f36448f5-4bf9-4b14-a09a-3a346294d5f6.png)
+
 in `useState` we had explicitly a setter function like setState.but in reducer function we have to manully return a new updated State.note that in mind dont change the original state and use things like spread operator to copy into a new one
 
 ### Context :
