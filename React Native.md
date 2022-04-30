@@ -1,4 +1,5 @@
-##### React native has a problem of extra rendering the `renderItem` in `<FlatList/>` componenet
+##### React native has a problem of extra rendering the `renderItem` in `<FlatList/>` componenet    
+<FlatList/> simulate things that we used to do with `map` in web react. with 'data' and 'renderItem' prop,it simulates map behavior.
 
 
 ## where to put or define our states:
