@@ -297,7 +297,8 @@ instead of using setFormValid function multiple times,we can set this function a
 
 ---
 ### useReducer
-one usecase of useReducer is : when updating one state is based on the on other state.in this case you might face a situation that u get the wrong snapshot of the state you want to use.
+one usecase of useReducer is : when updating one state is based on the on other state.in this case you might face a situation that u get the wrong snapshot of the state you want to use.   
+more meaningful name for reducer function could have been "functionThatManagesChangesToStateObject" !
 
 ### Context :
 we can still use oldway context in a functional comp(returning a function from consumer tag).it's not like we have to use `useContext`    
