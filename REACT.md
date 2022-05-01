@@ -361,4 +361,4 @@ Pure Components in React are the components which do not re-renders when the val
 [Pure Component vs React.memo](https://dev.to/nibble/react-memo-and-react-purecomponent-3k7k)
 
 ## useEffect vs useLayoutEffect:
-their logic and usage is pretty much the same,with minor diffrence: rule of thumb is useLayoutEffect runs before useEffect.and is much more similar to "componentDidMount" and "componentDidUpdate". for example if you wanna do some styling on a DOM before it actually loads,its better to use "useLayoutEffect".
+their logic and usage is pretty much the same,with minor diffrence: rule of thumb is useLayoutEffect runs before useEffect,and is much more similar to "componentDidMount" and "componentDidUpdate". for example if you wanna do some styling on a DOM before it actually loads,its better to use "useLayoutEffect".
