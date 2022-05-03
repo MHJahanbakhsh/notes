@@ -53,3 +53,7 @@ so this is exclusively for javascript.before es6 and introduction of modules sys
 ```
 __Note1:__ undescrore `_` is just a convention for private variables not neccessary.
 __Note2:__ diffrence between revealing and standard is in revealing you reveal your methods! nut in standard try to encapsulate the original logic
+
+---
+## Singleton Pattern:
+so basically this pattern is a class that just return one instance.
