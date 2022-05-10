@@ -487,4 +487,10 @@ we can not return anything from terneary expression.means: `x===4?return 0` is w
 ![image](https://user-images.githubusercontent.com/50621975/167612025-e8719a3f-d6f5-4767-a9cd-01b0484497c7.png)
 Calling a generator function does not execute it at once; instead, it returns an iterator object. When we call the `next()` method on iterator object, function body is executed until it sees the next `yield` keyword.
 
-`next()` method returns an object with a “value” property which has the value that has been returned by `yield` and a “done” property which stands for whether a function has completed execution or not.
+`next()` method returns an object with a “value” property which has the value that has been returned by `yield` and a “done” property which stands for whether a function has completed execution or not.   
+`yield` is similar to await;in terms of waiting for an async thing to finish for ex:
+```javascript
+fynction* gen(){
+  const fin = yield fetch(...)
+}
+```
