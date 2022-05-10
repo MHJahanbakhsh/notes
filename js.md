@@ -494,3 +494,4 @@ fynction* gen(){
   const fin = yield fetch(...)
 }
 ```
+__note about functions in general:__ when we don not explicitly return somthing from a function,that function actually returns undefined
