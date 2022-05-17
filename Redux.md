@@ -43,8 +43,8 @@ export const counterSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = counterSlice.actions
+export const { increment, decrement, incrementByAmount } = counterSlice.actions  //vahlaa here are the actions
 
-export default counterSlice.reducer
+export default counterSlice.reducer //here we go.you have the reducers
 ```
 just to sink in of how awsome it is i should say each key in `redecers` are going to define as an action. Baaam!
