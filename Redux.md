@@ -48,3 +48,5 @@ export const { increment, decrement, incrementByAmount } = counterSlice.actions 
 export default counterSlice.reducer //here we go.you have the reducers
 ```
 just to sink in of how awsome it is i should say each key in `redecers` are going to define as an action. Baaam!
+
+[link to a sandbox for redux toolit intro](https://codesandbox.io/s/redux-toolkit-intro-7dp3kn)
