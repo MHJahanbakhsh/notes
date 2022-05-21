@@ -50,3 +50,31 @@ export default counterSlice.reducer //here we go.you have the reducers
 just to sink in of how awsome it is i should say each key in `redecers` are going to define as an action. Baaam!
 
 [link to a sandbox for redux toolit intro](https://codesandbox.io/s/redux-toolkit-intro-7dp3kn)
+
+
+# mapDispatchToProps:
+essentially we have two forms of mapDispatchToProps:
+* function
+* object    
+in a nutshell we use the function form when we want to have full controll over when dispatches the actions(so that we won't be needing a middlware in this case!! BAAAM).     
+object form is probably more intuitive but we dont access to `dispatch` directly and when that action creator is called dispatch fires off automatically.
+
+just to be more clear when i say object form i mean an object of action creator functions.see below     
+
+__Object form:__
+```javascript
+const mapDispatchToProps = {
+  decrement: () => ({ type: "DECREMENT" }),
+  increment: () => ({ type: "INCREMENT" })
+};
+//as you can see there is no dispatch
+```
+__function form:__
+```javascript
+const mapDispatchToProps = dispatch => {
+  return {
+    decrement: () => dispatch({ type: "DECREMENT" }),
+    increment: () => dispatch({ type: "INCREMENT" })
+  };
+};
+```
