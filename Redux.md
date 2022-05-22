@@ -91,4 +91,4 @@ const mapDispatchToProps = {
 };
 
 ```
-#### redux thunk uses the object-form of mapDispatchToProps
+#### redux thunk uses the object-form of mapDispatchToProps and makes it act like a function form
