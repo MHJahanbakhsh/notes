@@ -100,7 +100,8 @@ essentially we have two types of saga :
 * watcher
 * worker    
 the 'watcher' is responsible for catching the action and delegating it.and 'worker' does the actual asyn job
-and `put` is like dispatch      
+`put` is like dispatch    
+`call` runs a function , if it returns a promise,pauses the saga untill the promise is resolved
 `takeEvery` makes queue on every action that is called and forward them respectively    
 `takeLatest` acts like debouncing and if the previous action is not dispatched yet ,it will discard it and create a new one to go
 [link to the sandbox](https://codesandbox.io/s/redux-saga-nxwzwj?file=/src/sagas/saga.js)
