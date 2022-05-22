@@ -92,3 +92,9 @@ const mapDispatchToProps = {
 
 ```
 #### redux thunk uses the object-form of mapDispatchToProps and makes it act like a function form
+
+# redux-saga
+unlike redux thunk the your action will cross this middleware whether its a function or not.    
+the way it works is it can catch every action with functions such as `takeEvery`.and in that function it passes down a callback function which is essentially the actionCreator that is being send to the reducer.    
+and `put` is like dispatch      
+[link to the sandbox](https://codesandbox.io/s/redux-saga-nxwzwj?file=/src/sagas/saga.js)
