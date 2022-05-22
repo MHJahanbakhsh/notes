@@ -91,3 +91,4 @@ const mapDispatchToProps = {
 };
 
 ```
+#### redux thunk uses the object-form of mapDispatchToProps
