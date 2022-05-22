@@ -78,4 +78,16 @@ const mapDispatchToProps = dispatch => {
   };
 };
 ```
-now; with redux thunk it lets each of those acion creators in object form of `mapDispatchToProps` return a function and that function recieves two arguments: `dispatch`&`getState`
+now; with redux thunk it lets each of those acion creators in object form of `mapDispatchToProps` return a function and that function recieves two arguments: `dispatch`&`getState`   
+imagine the example above for __object form:__    
+```javascript
+const mapDispatchToProps = {
+  decrement: () =>{
+  return function (dispatch,getState){
+    //do some shit asynchronus
+    dispatch({ type: "DECREMENT" })
+  }},
+  increment: () => ({ type: "INCREMENT" }) //we can still have normal action creators with redux thunk
+};
+
+```
