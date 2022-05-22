@@ -95,7 +95,11 @@ const mapDispatchToProps = {
 
 # redux-saga
 unlike redux thunk the your action will cross this middleware whether its a function or not.    
-the way it works is it can catch every action with functions such as `takeEvery`.and in that function it passes down a callback function which is essentially the actionCreator that is being send to the reducer.    
+the way it works is it can catch every action with functions such as `takeEvery`.and in that function it passes down a callback function which is essentially the actionCreator that is being send to the reducer.  
+essentially we have two types of saga :   
+* watcher
+* worker    
+the 'watcher' is responsible for catching the action and delegating it.and 'worker' does the actual asyn job
 and `put` is like dispatch      
 `takeEvery` makes queue on every action that is called and forward them respectively    
 `takeLatest` acts like debouncing and if the previous action is not dispatched yet ,it will discard it and create a new one to go
