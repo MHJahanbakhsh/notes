@@ -78,3 +78,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 ```
+now; with redux thunk it lets each of those acion creators in object form of `mapDispatchToProps` return a function and that function recieves two arguments: `dispatch`&`getState`
