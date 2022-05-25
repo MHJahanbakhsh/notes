@@ -104,4 +104,7 @@ the 'watcher' is responsible for catching the action and delegating it.and 'work
 `call` runs a function , if it returns a promise,pauses the saga untill the promise is resolved
 `takeEvery` makes queue on every action that is called and forward them respectively    
 `takeLatest` acts like debouncing and if the previous action is not dispatched yet ,it will discard it and create a new one to go
-[link to the sandbox](https://codesandbox.io/s/redux-saga-nxwzwj?file=/src/sagas/saga.js)
+[link to the sandbox](https://codesandbox.io/s/redux-saga-nxwzwj?file=/src/sagas/saga.js)     
+
+---
+as the stephan showed,with redux thunk we can still have some normal action creators alongside with async functions. but it seems with redux-saga every action goes through saga and you have to write all of your action in 'watcher-worker' form
