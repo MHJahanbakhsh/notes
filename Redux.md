@@ -13,7 +13,7 @@ return state + action
 ```
 
 # redux-toolikt is a Godsent!
-it takes away all the sweat of creating action creators and reducers seperate and connecting them together.
+it takes away all the sweat of creating action creators and reducers seperately and connecting them together.
 ```javascript
 
 import { createSlice } from '@reduxjs/toolkit'
