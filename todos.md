@@ -3,3 +3,4 @@
 * finish saga two examples
 * recursion
 * design patterns
+* js BLOB
