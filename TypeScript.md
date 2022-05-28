@@ -13,9 +13,15 @@ in typescript/javascript ,Object types are function,arrays,objects and classes w
 ![Screenshot (224)](https://user-images.githubusercontent.com/50621975/170809614-34c9c99d-d438-4ef8-9da6-0b33df2b05f2.png)
 sometimes we can trick the typescript compiler that a value has a diffent type(in a good way).but this is only possible with refrence types(object types)       
 wheter you like it or not,every value in typescript gonna have a type associate with it
-* __in "Type annotation", we as developers tell typescript type of a value(only applicable to premative data types)__
+* __in "Type annotation", we as developers tell typescript type of a value__
 * __in "Type infrence",TypeScript guesses the type__
 
 ![image](https://user-images.githubusercontent.com/50621975/153896461-8b71a57d-4fde-4f97-b471-ecad53b42b43.png)
 
-![image](https://user-images.githubusercontent.com/50621975/153896402-7ea9aa7a-815f-4b52-a24b-071d751b3479.png)
+![image](https://user-images.githubusercontent.com/50621975/153896402-7ea9aa7a-815f-4b52-a24b-071d751b3479.png)     
+
+for 'undefined' and 'null' , types & values are the same:
+```typescript
+    let nothingMuch:null = null;
+    const nothing:undefined = undefined
+```
