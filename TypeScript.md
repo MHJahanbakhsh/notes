@@ -25,3 +25,11 @@ for 'undefined' and 'null' , types & values are the same:
     let nothingMuch:null = null;
     const nothing:undefined = undefined
 ```
+
+let see how it works with object literals
+```typescript
+let point : {x:number; y:number} = {  //note that for type we use ";" instead of ','
+    x:10,
+    y:5
+}
+```
