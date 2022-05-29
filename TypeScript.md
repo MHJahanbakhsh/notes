@@ -42,10 +42,16 @@ apples = 5 //typescript wont assign any type to apples
 ## if typescript can guess variables for us, when we are going to use type annotaion over indfrence or vice-versa?      
 ![image](https://user-images.githubusercontent.com/50621975/153896402-7ea9aa7a-815f-4b52-a24b-071d751b3479.png)   
 ```typescript
-//1)when we have a function that returns the any typee
-
+//1)when we have a function that returns the any type:
+const json = '{"X":10,"Y":5}'
+const coords = JSON.parse(json)   //if you hover over it,coords has type of "any"(why?) becuase the JSON.parse is a function that returns "any" 
+console.log(coords) //{X:10,Y:5}
 ```
-
+quick note on json:
+![Screenshot (227)](https://user-images.githubusercontent.com/50621975/170857878-10ee18fe-0e19-4c0c-a485-2ba20607c069.png)
+```
+JSON.parse('{"value":"5"}') // {value:"5"}
+```
 so usually we are going to use type infrence more frequently
 
 
