@@ -46,12 +46,28 @@ apples = 5 //typescript wont assign any type to apples
 const json = '{"X":10,"Y":5}'
 const coords = JSON.parse(json)   //if you hover over it,coords has type of "any"(why?) becuase the JSON.parse is a function that returns "any" 
 console.log(coords) //{X:10,Y:5}
+
+//2)when we declare first and init later
+let words = ['blue', 'green', 'red']
+let foundWord;
+for(let i=0; i<words.length; i++){
+if (words[i] === 'blue'){foundWord = true}
+}
+
+/*3) a variable whose type connot be inferred correctly.for example you wanna conditionally assign a value boolean or number.if you let infrence does its job;you'll face an error */
+let numbers = [-10, -1, 12];
+let numberAboveZero: boolean|number = false;
+for(let i=0; i<numbers.length; i++){
+if(numbers[i] >0){numberAboveero = number[i]}else{null}
+}
 ```
-quick note on json:
+quick note on json: as you can see in picture below,the output of `JSON.parse()` is heavily dependent on the input. instead of guessing the output-type TS says "fuck it lets just return any type"
 ![Screenshot (227)](https://user-images.githubusercontent.com/50621975/170857878-10ee18fe-0e19-4c0c-a485-2ba20607c069.png)
 ```
 JSON.parse('{"value":"5"}') // {value:"5"}
 ```
+
+### note:avoid variables with "any" type at all cost   
 so usually we are going to use type infrence more frequently
 
 
