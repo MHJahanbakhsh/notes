@@ -41,5 +41,6 @@ apples = 5 //typescript wont assign any type to apples
 ```
 ## if typescript can guess variables for us, when we are going to use type annotaion over indfrence or vice-versa?      
 ![image](https://user-images.githubusercontent.com/50621975/153896402-7ea9aa7a-815f-4b52-a24b-071d751b3479.png)     
+so usually we are going to use type infrence more frequently
 
 
