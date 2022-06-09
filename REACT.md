@@ -362,3 +362,6 @@ Pure Components in React are the components which do not re-renders when the val
 
 ## useEffect vs useLayoutEffect:
 their logic and usage is pretty much the same,with minor diffrence: rule of thumb is useLayoutEffect runs before useEffect,and is much more similar to "componentDidMount" and "componentDidUpdate". for example if you wanna do some styling on a DOM before it actually loads,its better to use "useLayoutEffect".
+
+## Error Boundaries:
+A class component becomes an error boundary if it defines either (or both) of the lifecycle methods static getDerivedStateFromError() or componentDidCatch(). Use `static getDerivedStateFromError()` to render a fallback UI after an error has been thrown. Use `componentDidCatch()` to log error information.
