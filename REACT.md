@@ -401,3 +401,6 @@ Then you can use it as a regular component:
 Error boundaries work like a JavaScript catch {} block, but for components. Only class components can be error boundaries. In practice, most of the time you’ll want to declare an error boundary component once and use it throughout your application.
 
 Note that __error boundaries only catch errors in the components below them in the tree.__ An error boundary can’t catch an error within itself. If an error boundary fails trying to render the error message, the error will propagate to the closest error boundary above it. This, too, is similar to how the catch {} block works in JavaScript
+
+
+in jsx you can't use if statement;only spread syntax.if u have more complex conditional logic,u should do it before return statement 
