@@ -108,3 +108,7 @@ the 'watcher' is responsible for catching the action and delegating it.and 'work
 
 ---
 as the stephan showed,with redux thunk we can still have some normal action creators alongside with async functions. but it seems with redux-saga every action goes through saga and you have to write all of your action in 'watcher-worker' form
+
+### what is 'pristine' and 'submitting' in redux-form?      
+__pristine__ means that no fields in the form have been modified yet    
+__submitting__, as the name suggests, means that the form is in process of submitting.
