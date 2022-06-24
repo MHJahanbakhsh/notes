@@ -114,4 +114,5 @@ __pristine__ means that no fields in the form have been modified yet
 __submitting__, as the name suggests, means that the form is in process of submitting.
 
 
-__value__ field in reduxform state is the one who stores values of the form realtime
+__value__ field in reduxform state is the one who stores values of the form realtime    
+redux-form has some built-in selectors to select a specific value from the form reducer, such as `getFormValues` & `formValueSelector`; we use them inside mapStateToProps function
