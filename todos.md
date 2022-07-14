@@ -3,5 +3,5 @@
 * finish saga two examples
 * recursion
 * design patterns
-* js BLOB
-nextjs
+* js BLOB(upload attachments)
+* nextjs
