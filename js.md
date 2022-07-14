@@ -475,3 +475,6 @@ fynction* gen(){
 }
 ```
 __note about functions in general:__ when we don not explicitly return somthing from a function,that function actually returns undefined
+
+
+## canvas api, audio and video api , blob and URL api .... all these apis are not part of javascript itself
