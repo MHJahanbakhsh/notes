@@ -4,3 +4,4 @@
 * recursion
 * design patterns
 * js BLOB
+nextjs
