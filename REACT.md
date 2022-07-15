@@ -336,6 +336,9 @@ the diffrence is it loads an skeleton preload html from serer and then start the
 * There are three categories of lifecycle methods: mounting, updating, and unmounting
 ---
 
+![image](https://user-images.githubusercontent.com/50621975/179182391-5b89fd53-013d-4d4c-9d29-da1d9a24f345.png)
+
+
 jsx will handle array by concatenating the inside and showing on screen.but it gives an error if you pass an object as text
 you can pass strings to props in jsx without having to write {} for example:
 ```jsx
