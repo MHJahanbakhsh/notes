@@ -70,4 +70,4 @@ JSON.parse('{"value":"5"}') // {value:"5"}
 ### note:avoid variables with "any" type at all cost   
 so usually we are going to use type infrence more frequently
 
-type inference for function only tries to guess the return value of the function and not the arguments
+type inference for function only tries to guess the return value of the function and not the arguments.which means typescript can never guess types of arguments
