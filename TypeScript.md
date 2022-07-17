@@ -104,7 +104,7 @@ const logWeather = (forcast:{date:Date,weather:string})=>{
     console.log(forcast.weather)
 }
 //do this:
-const logWeather = ({date,weather}:{date:Date,weather:string})=>{
+const logWeather = ({date,weather}:{date:Date,weather:string})=>{ //notice how destructuring and annotaion portions are seperate from each other
     console.log(date)
     console.log(weather)
 }
