@@ -90,3 +90,22 @@ function errorLogger(message:string):never{
     throw new Error(message)     //we use 'never' when a function aaaalways with no condition returns an error.yani: if it has a if statement for it,it should return void instead?
   }
 ```
+
+### let see how destructuring in a function argument works in typescript:       
+```typescript
+
+const todaysWeather = {
+date: new Date(),
+weather:'sunny'
+}
+//instead of this:
+const logWeather = (forcast:{date:Date,weather:string})=>{
+    console.log(forcast.date)
+    console.log(forcast.weather)
+}
+do this:
+const logWeather = ({date,weather}:{date:Date,weather:string})=>{
+    console.log(date)
+    console.log(weather)
+}
+```
