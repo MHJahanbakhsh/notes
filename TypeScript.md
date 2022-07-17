@@ -103,7 +103,7 @@ const logWeather = (forcast:{date:Date,weather:string})=>{
     console.log(forcast.date)
     console.log(forcast.weather)
 }
-do this:
+//do this:
 const logWeather = ({date,weather}:{date:Date,weather:string})=>{
     console.log(date)
     console.log(weather)
