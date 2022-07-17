@@ -82,3 +82,11 @@ const subtract = (a:number, b:number)=>{
 
 //so overall we avoid any type inference in functions
 ```
+### two special types: `void`&`never`       
+you already know void, however when a function is explicitly says its returning void, it can also return null or undefined.
+about never:
+```typescript
+function errorLogger(message:string):never{   
+    throw new Error(message)     //we use 'never' when a function aaaalways with no condition returns an error.yani: if it has a if statement for it,it should return void instead?
+  }
+```
