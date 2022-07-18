@@ -146,7 +146,8 @@ class Vehicle{
 class Car extends Vehicle{
     constructor(public wheels:number, color:string){
     super(color) //whenever we call a constructor in a child class we are REQUIRED to call the construcotr of the parent class too. to do so we HAVE TO call `super`
-    }
+     }
+     //plot twist: we could have write super('red') to pass constant value to Vehicle constructor 
 }
 // so essentially `super` is a refrence to constructor method of the parent class
 
