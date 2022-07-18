@@ -121,19 +121,33 @@ const logWeather = ({date,weather}:{date:Date,weather:string})=>{ //notice how d
 ```typescript
 //this is ok
 class Vehicle {
-color:string = 'red'
+    color:string = 'red'
 }
 
 //but usually:
 class Vehicle{
-color:string;
-constructor(color){
-this.color = color
-    }
+    color:string;
+    constructor(color){
+    this.color = color
+     }
 }
 
 //in typescript we can make above statement waaay shorter:
 class Vehicle{
-constructor(public color:string){} //exactly same as above!!
+    constructor(public color:string){} //exactly same as above!!
 }
+```
+__what happens when we try to init a child extended class of Vehicle when itself has its own dynamic attributes:__
+```typescript
+class Vehicle{
+    constructor(public color:string){} //exactly same as above!!
+}
+
+class Car extends Vehicle{
+    constructor(public wheels:number, color:string){
+    super(color) //whenever we call a constructor in a child class we are REQUIRED to call the construcotr of the parent class too. to do so we HAVE TO call `super`
+    }
+}
+
+const ford = new Car(4,'blue')
 ```
