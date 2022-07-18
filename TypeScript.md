@@ -110,7 +110,30 @@ const logWeather = ({date,weather}:{date:Date,weather:string})=>{ //notice how d
 }
 ```
 
-## video 44:
+## video 44 and after:
 ![image](https://user-images.githubusercontent.com/50621975/179449657-1599be2c-32ef-4715-8286-4e2b49dcdb3d.png)
 * private method is not accessible in a child class(i mean extended child class.not instance)
 * in polymorphism the type of the method can't change 
+* by default if u don't put anything;is public      
+
+`public`, `private` & `protected` are not solely for methods,we can use them for attributes too.however instead of implmenting attributes in class hardcoded like methods we want them to be dynamic via arguments in initialization.
+
+```typescript
+//this is ok
+class Vehicle {
+color:string = 'red'
+}
+
+//but usually:
+class Vehicle{
+color:string;
+constructor(color){
+this.color = color
+    }
+}
+
+//in typescript we can make above statement waaay shorter:
+class Vehicle{
+constructor(public color:string){} //exactly same as above!!
+}
+```
