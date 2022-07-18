@@ -116,7 +116,7 @@ const logWeather = ({date,weather}:{date:Date,weather:string})=>{ //notice how d
 * in polymorphism the type of the method can't change 
 * by default if u don't put anything;is public      
 
-`public`, `private` & `protected` are not solely for methods,we can use them for attributes too.however instead of implmenting attributes in class hardcoded like methods we want them to be dynamic via arguments in initialization.
+`public`, `private` & `protected` are not solely for methods,we can use them for attributes too.however instead of implmenting attributes hardcoded like methods we want them to be dynamic via arguments in initialization.
 
 ```typescript
 //this is ok
