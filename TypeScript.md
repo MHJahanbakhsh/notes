@@ -148,6 +148,7 @@ class Car extends Vehicle{
     super(color) //whenever we call a constructor in a child class we are REQUIRED to call the construcotr of the parent class too. to do so we HAVE TO call `super`
     }
 }
+// so essentially `super` is a refrence to constructor method of the parent class
 
 const ford = new Car(4,'blue')
 ```
