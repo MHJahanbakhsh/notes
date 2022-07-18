@@ -109,3 +109,8 @@ const logWeather = ({date,weather}:{date:Date,weather:string})=>{ //notice how d
     console.log(weather)
 }
 ```
+
+## video 44:
+![image](https://user-images.githubusercontent.com/50621975/179449657-1599be2c-32ef-4715-8286-4e2b49dcdb3d.png)
+* private method is not accessible in a child class(i mean extended child class.not instance)
+in polymorphism the type of the method can't change 
