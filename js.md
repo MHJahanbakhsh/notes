@@ -522,6 +522,11 @@ console.log(ava)
 ![screenpng](https://user-images.githubusercontent.com/50621975/179822240-bf8cbbb0-a3a4-4a80-aaab-fd3f8bc0b7ec.png)
 and this is why instances cant access to static methods(and attr),becuase they are not in the prototype chain!
 
+if u want to use your script tag in html head instead of end of body, put `defer` sttribute in the script tag
+```html
+<script src='...' defer></script>
+```
+
 ---
 # javascript,understanding the wierd parts:
 * 1)`console.log(typeof [1,2,3])` >>> object 
