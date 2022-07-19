@@ -478,3 +478,47 @@ __note about functions in general:__ when we don not explicitly return somthing 
 
 
 ## canvas api, audio and video api , blob and URL api .... all these apis are not part of javascript itself
+
+## HUGE IMPORTANT NOTE IN OOP:
+diffrence between static method.public fields and public methods:
+```javascript
+class Person{
+
+constructor(){
+this.choob = 'choob'
+}
+pelastik = 'pelastik'
+//choob & pelastik are exactly the same in terms of defining and their position in instances.they are avalable in each instance 
+}
+
+//but this is not the case for methods(functions).javascript classes by default try to store methods in prototype(this is the right way).unless you explicitly define //your methods in contructor.which means:
+class Material(){
+constructor(){
+this.getMe = function(){} //this method is not going to prototype
+  }
+  
+getYou(){} //this is going to in prototype
+}
+
+```
+__what about static methods(or even attributes)? they are going to be in the constructor function of the class! see below:__
+```javascript
+class Person{
+    constructor(){
+        this.getMe = function(){return null}
+        this.choob = 'choob'
+    }
+  static ker = 'ker'
+    static kossherSaz = function(){}
+
+  pelastik=  'pelastik'
+
+  getYou(){}
+}
+
+const ava = new Person()
+console.log(ava)
+```
+![screenpng](https://user-images.githubusercontent.com/50621975/179822240-bf8cbbb0-a3a4-4a80-aaab-fd3f8bc0b7ec.png)
+
+
