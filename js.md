@@ -536,5 +536,16 @@ person = {} //believe it or not this will not lead to and error
 
 //but it we enable strict mode it requires a declaration(let,var,const) before initialization
 'use strict'
-const person = {}
+const person = {} //should
+```
+also it does not have to be at global scope .you can impose strict rules only for one function in a file:
+```javascript
+function loggerr(){
+"use strict"
+let person;
+persom = {} //lead to error in function call
+}
+
+abdoli = 'abdoli' //fine becuase strict mode won't apply to this
+
 ```
