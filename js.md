@@ -528,4 +528,13 @@ and this is why instances cant access to static methods(and attr),becuase they a
 fix: console.log(Object.prototype.toString.call([1,2,3) >>> [object Array]
 
 similar to `typeof` we have `instanceOf` which requires no pranethesis or dots for usage:
-only use it for an instance of a class. if you write somthing like `[1,2] instanceof Array` it will give you false cuase it is not instance of the Array its just using its prototype methods in prototype chain if needed
+only use it for an instance of a class. if you write somthing like `[1,2] instanceof Array` it will give you false cause `[1,2]` is not instance of the Array its just using its prototype methods in prototype chain if needed
+
+strict mode: as the name suggest impose stricter rules to javascript engine in compiling:
+```javascript
+person = {} //believe it or not this will not lead to and error
+
+//but it we enable strict mode it requires a declaration(let,var,const) before initialization
+'use strict'
+const person = {}
+```
