@@ -526,3 +526,6 @@ and this is why instances cant access to static methods(and attr),becuase they a
 # javascript,understanding the wierd parts:
 * 1)`console.log(typeof [1,2,3])` >>> object 
 fix: console.log(Object.prototype.toString.call([1,2,3) >>> [object Array]
+
+similar to `typeof` we have `instanceOf` which requires no pranethesis or dots for usage:
+only use it for an instance of a class. if you write somthing like `[1,2] instanceof Array` it will give you false cuase it is not instance of the Array its just using its prototype methods in prototype chain if needed
