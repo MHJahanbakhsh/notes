@@ -552,5 +552,18 @@ persom = {} //lead to error in function call
 }
 
 abdoli = 'abdoli' //fine becuase strict mode won't apply to this
-
 ```
+## what is 'syntax parser'?
+__a programm that reads your code and determines what it does and if its grammer is valid(essentially a compiler)__   
+your code is not magic.someone else wrote a programm to translate it for the computer.it's important to know your code is not the exact thing that goes to the computer ,but the translation of it which could contain extra stuff
+![image](https://user-images.githubusercontent.com/50621975/179918023-3722dc02-01e3-4e82-a329-83dad6c10eaa.png)
+
+
+## what is 'lexical environment'?
+__where somthing sits physically in the code you write__    
+'lexical' means having to do with words or grammer.a lexical environment exists in programming languages in which __wher__ you write something is important.    
+in simple for the compiler is important where your variables are. (for defining scopes and shit..)  
+
+## what is execution context?
+__a wrapper to help manage the code that is running__     
+there are lots of lexical environments.which one is currently running is managed via execution contexts.it can contain things beyond what you've written in your code.(that extra stuff) 
