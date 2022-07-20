@@ -56,4 +56,29 @@ __Note2:__ diffrence between revealing and standard is in revealing you reveal y
 
 ---
 ## Singleton Pattern:
-so basically this pattern is a class that just return one instance.
+so basically this pattern is a class that just return one instance.   
+the original and more intuitive way is to to this with es5 constructor function but i want to do this with classes too:   
+```javascript
+class Test{
+    constructor(){
+        if(Test._instance){
+            return Test._instance
+        }
+
+
+
+        Test._instance =this //this will going to run only on first initialization.and make store the first instance in the class 
+    }
+
+}
+
+const instance1 = new Test()
+const instance2 = new Test()
+
+console.log(instance1===instance2) //>>>> true
+```
+
+es5 version:
+```javascript
+
+```
