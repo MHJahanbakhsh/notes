@@ -575,5 +575,28 @@ esseintially global means :not inside any function or scope
 
 ---
 a name may be defined more than once, but only can have one value in any given context.   
-in javascript __objects__ are just collections of name-value pairs
+in javascript __objects__ are just collections of name-value pairs    
+
+## hoisting:
+you already have some idea about hoisting from jonas.let anthony alicia clarifies more:   
+
+```
+console.log(a)
+b()
+
+var a = 'hello world'
+
+function b(){
+    console.log('fuck off')
+}
+/*>>> the result is:
+undefined
+hello world
+*/
+```
+so why for function b is completely hoisted but for variable a kinda hoisted?(if it wasn't hoisted at all you would get an error instead of undefined)    
+so what happens is; javascript engine before executing codes one by one take a quick glampse at it and allocate memory for function and variables . for function does this completely but for variables does this partially .kinda like this:  
+```javascript
+var a;
+```
 
