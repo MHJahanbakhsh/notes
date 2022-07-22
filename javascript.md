@@ -567,3 +567,13 @@ in simple for the compiler is important where your variables are. (for defining 
 ## what is execution context?
 __a wrapper to help manage the code that is running__     
 there are lots of lexical environments.which one is currently running is managed via execution contexts.it can contain things beyond what you've written in your code.(that extra stuff) 
+![image](https://user-images.githubusercontent.com/50621975/180510586-e080565c-1e4c-4b10-b054-65a0bbb58064.png)
+either we did wrote any code or not,javascript engine creates these two at the begining ;and in the global context `this` is equals to `window` object.   
+in browser global object is window.in nodejs is diffrent in bunjs too and so on...      
+esseintially global means :not inside any function or scope
+
+
+---
+a name may be defined more than once, but only can have one value in any given context.   
+in javascript __objects__ are just collections of name-value pairs
+
