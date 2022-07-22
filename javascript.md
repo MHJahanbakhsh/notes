@@ -598,5 +598,7 @@ so why for function b is completely hoisted but for variable a kinda hoisted?(if
 so what happens is; javascript engine before executing codes one by one take a quick glampse at it and allocate memory for function and variables . for function does this completely but for variables does this partially .kinda like this:  
 ```javascript
 var a;
+//this is a simulation-like example for before code start to execute
+//js engine sets the value of a to 'undefined' to see what comes next
 ```
 
