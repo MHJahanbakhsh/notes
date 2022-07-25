@@ -611,4 +611,16 @@ essentially the same thing as being single threaded
 ## let see what happens when you invoke a function (in terms of execution context and call stack)
 consider code below:
 ```
+function a(){
+    b();
+    var c;
+}
+
+function b(){
+    var d;
+}
+a();
+var d;
 ```
+lets walkthrough this codes execution:      
+1. first before 
