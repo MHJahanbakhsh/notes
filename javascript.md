@@ -607,3 +607,8 @@ javascript is a single threaded language ,which means can only do one command at
 
 ## synchronus:
 essentially the same thing as being single threaded
+
+## let see what happens when you invoke a function in terms of execution context and call stack:
+consider code below:
+```
+```
