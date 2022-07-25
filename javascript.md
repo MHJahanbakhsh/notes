@@ -602,3 +602,8 @@ var a;
 //js engine sets the value of a to 'undefined' to see what comes next
 ```
 
+## Single Threaded:
+javascript is a single threaded language ,which means can only do one command at a time(no parallel)(however under the hood of browser maybe not!)     
+
+## synchronus:
+essentially the same thing as being single threaded
