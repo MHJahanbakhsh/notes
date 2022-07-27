@@ -632,3 +632,19 @@ lets walkthrough this codes execution:
 
 __NOTE:__ what matters in execution stack is the hierarchical order of 'function calls',not their declaration or so to speak lexical environment
 
+### Question: 
+what is the result of running code below?
+```js
+function b(){
+    console.log(myVar)
+}
+
+function a(){
+    var myVar = 2;
+    b()
+}
+
+var myVar = 1
+a()
+```
+>>> th result is 1! despite the fact `b` is invoked isnide `a`; but `b` is not defined inside `a` (in that case it would have benn 2)
