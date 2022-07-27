@@ -610,7 +610,7 @@ essentially the same thing as being single threaded
 
 ## let see what happens when you invoke a function (in terms of execution context and call stack)
 consider code below:
-```
+```js
 function a(){
     b();
     var c;
@@ -623,4 +623,12 @@ a();
 var d;
 ```
 lets walkthrough this codes execution:      
-1. first before 
+1. first before executing anything,js engine creates a __global execution context__ and set aside memory for each variable and function![image](https://user-images.githubusercontent.com/50621975/181321215-c99eb27c-d8cc-40f3-b6a2-c28bf6e4909d.png)
+
+2. then it starts line by line ,it would not create new execution context UNTILL one function gets invoke.in this case is function a
+3. and in that point we have a execution stack![image](https://user-images.githubusercontent.com/50621975/181323838-c1971946-bcdb-4bfa-8a87-e79805c00424.png)
+4. intrestingly inside function `a`, function `b` gets invoked,so another execution context (for `b`) gets created on top of `a`![image](https://user-images.githubusercontent.com/50621975/181328644-1de28c9b-7f79-46b3-beae-8ded0f0528a3.png)
+5. now only when `b` finishes to run,it's execution context will pop off from the execution stack and `a` continous to run(in this case declare `c`) and so on...
+
+__NOTE:__ what matters in execution stack is the hierarchical order of 'function calls',not their declaration or so to speak lexical environment
+
