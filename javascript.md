@@ -647,4 +647,4 @@ function a(){
 var myVar = 1
 a()
 ```
->>> th result is 1! despite the fact `b` is invoked isnide `a`; but `b` is not defined inside `a` (in that case it would have benn 2)
+the result is 1! despite the fact `b` is invoked isnide `a`; but `b` is not defined inside `a` (in that case it would have been 2)
