@@ -647,4 +647,22 @@ function a(){
 var myVar = 1
 a()
 ```
-the result is 1! despite the fact `b` is invoked isnide `a`; but `b` is not defined inside `a` (in that case it would have been 2)
+the result is 1! despite the fact `b` is invoked isnide `a`; but `b` is not defined inside `a` (in that case it would have been 2)    
+
+in a nutshell: order of invocation defines stack and execution contexts stacking order,but order of lexical environment defines scoping of the variables  
+```js
+function a(){
+    console.log('function a')
+    b()
+
+    function b(){
+        console.log(myVar)
+    }
+
+    var myVar = 2
+}
+
+var myVar = 1
+a()
+//in this case the result of logging myVar from function`b` would be 2.because now b is lexically inside a ,hence uses it's scope variables first
+```
