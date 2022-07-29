@@ -425,3 +425,7 @@ this hook is way more cooler than useDefferedValue.the main diffrence is you don
 [webdev simplified article on useTransition](https://blog.webdevsimplified.com/2022-04/use-transition/)
 
 *currently i aint have enough time to manually write my notes,but finally i have to but for now these articles are good enough*
+
+
+__note on hooks in general:__
+we are not allowed to conditionally call hooks. they should always be in top level. this means we aren't allowed to use hooks inside loops, conditions or nested functions.
