@@ -418,4 +418,10 @@ Note that __error boundaries only catch errors in the components below them in t
 
 ## useDeferredValue:
 essentially is the same as debouncing.execpt i rather debouncing lot better. becuase it gives u much more freedom in terms of how long you wanna defer your input   
-[webdev simplified article on useDeferredValue](https://blog.webdevsimplified.com/2022-05/use-deferred-value/)
+[webdev simplified article on useDeferredValue](https://blog.webdevsimplified.com/2022-05/use-deferred-value/)      
+
+## useTransition:
+this hook is way more cooler than useDefferedValue.the main diffrence is you don't have to specify some random defer time .it woul delay the expensive computaion exactly as it's needed.
+[webdev simplified article on useTransition](https://blog.webdevsimplified.com/2022-04/use-transition/)
+
+*currently i aint have enough time to manually write my notes,but finally i have to but for now these articles are good enough*
