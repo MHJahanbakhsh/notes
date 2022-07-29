@@ -362,9 +362,12 @@ when a component rerenders,all of it's children gets rerender too
 
 ## Pure Components:
 Pure Components in React are the components which do not re-renders when the value of state and props has been updated with the same values.   
-`React.memo` is the functional component equivalent of React.PureComponent. It is a higher-order component. If React.memo wraps a component, it memoizes the rendered output and skips subsequent renders if state, props, or context have not changed  
-2very good links for pure component and how it diffres from React.mem:
-[Pure Component](https://medium.com/technofunnel/working-with-react-pure-components-166ded26ae48)
+`React.memo` is the functional component equivalent of React.PureComponent. It is a higher-order component. If React.memo wraps a component, it memoizes the rendered output and skips subsequent renders if state, props, or context have not changed    
+__why we need React.memo?__   
+we know a parents rerenders,forces it's children to rerender too.but sometimes we don't want that and only want that child to rerender when it's props or state changes ;so we wrape that comp with React.memo :`export default React.memo(Child)`
+
+very good links for pure component and how it diffres from React.memo:      
+[Pure Component](https://medium.com/technofunnel/working-with-react-pure-components-166ded26ae48)     
 [Pure Component vs React.memo](https://dev.to/nibble/react-memo-and-react-purecomponent-3k7k)
 
 ## useEffect vs useLayoutEffect:
