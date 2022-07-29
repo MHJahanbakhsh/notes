@@ -414,3 +414,8 @@ Note that __error boundaries only catch errors in the components below them in t
 
 
 ### in jsx you can't use if statement;only ternary expression.if u have more complex conditional logic,u should do it before return statement 
+
+
+## useDeferredValue:
+essentially is the same as debouncing.execpt i rather debouncing lot better. becuase it gives u much more freedom in terms of how long you wanna defer your input   
+[webdev simplified article on useDeferredValue](https://blog.webdevsimplified.com/2022-05/use-deferred-value/)
