@@ -75,7 +75,8 @@ in the example above, `slowFunction` we used 2 momoization:
 
 ### useCallback:   
 useMemo: Returns and stores the calculated value of a function in a variable   
-useCallBack: Returns and stores the actual function itself in a variable.although their syntax is the same
+useCallBack: Returns and stores the actual function itself in a variable.although their syntax is the same      
+The main difference between these hooks is that useMemo returns a memoized value while useCallback returns a memoized callback. A use case for useCallback is when you need to pass a function(or callback) as a prop to a child component. Instead of having React send a new function each render, this optimization technique makes it so that a new function is only passed if one of the dependencies in the dependency array changes
 
 Once React knows which virtual DOM objects have changed, then React updates those objects, and only those objects, on the real DOM
 
