@@ -71,6 +71,8 @@ in the example above, `slowFunction` we used 2 momoization:
 * as u know updating state cause whole component to reRender,so even when we just click on theme changer button, `doubleNumber` gets reinitialized and slowFunction runs completely unneccarily.so we wrap the value in a useMemo.just like useEffect it has a callback function and a dependancy array.the function only runs when the dependancy array changes.
 * we also used useMemo for an object: what happens is below that we have a useEffect that runs everytime "themeStyle" changes; but when since themeStyle is an object and a  refrence type value,in rerenders,its value in callstack changes and cuase useEffect to think it actually changed.so we wrap whole object in a useMemo and since the only variable that object is depends on, is `dark`, we make an arrangement so that only when `dark` varaible change; themStyle change; and hence useEffect runs
 
+[very good blog on useMemo and useCallback](https://deinyefa.medium.com/react-hooks-usememo-ace8e81782b1)
+
 ### useCallback:   
 useMemo: Returns and stores the calculated value of a function in a variable   
 useCallBack: Returns and stores the actual function itself in a variable.although their syntax is the same
