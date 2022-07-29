@@ -109,9 +109,10 @@ Note:all hooks only are accessible inside a react component(function)
 -useState(value)  is a funtion that RETURNS two things: that 'value' and a function to reset that value
 
 ---
-useRef: essentioanlly  ref has two usecase:
-first:using as a state reservior which does not force component to render like useStateand 
-second:selecting an element instead of using document.queryselector....
+## useRef: 
+essentially  ref has two usecase:   
+1. :using as a state reservior which does not force component to render like useStateand 
+2. :selecting an element instead of using document.queryselector....
  comprehensive guide to useRef: [link](https://www.youtube.com/watch?v=t2ypzz6gJm0);
  
  ### use useRef to acess previous value in states:
