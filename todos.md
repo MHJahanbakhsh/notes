@@ -5,3 +5,4 @@
 * design patterns
 * js BLOB(upload attachments)
 * nextjs
+* throttling & debouncing (from webdevsimp)
