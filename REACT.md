@@ -429,3 +429,5 @@ this hook is way more cooler than useDefferedValue.the main diffrence is you don
 
 __note on hooks in general:__
 we are not allowed to conditionally call hooks. they should always be in top level. this means we aren't allowed to use hooks inside loops, conditions or nested functions.
+
+__in programmatic navigation:__ `history.push()` will add to history stack,so the back button works fine.but with `history.replace` you wont be able to go back with back button
